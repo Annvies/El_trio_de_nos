@@ -12,6 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".PantallaAgregarGasto"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaGastosCtegoria"
+            android:exported="false" />
+        <activity
+            android:name=".AyudaView"
+            android:exported="false" />
+        <activity
+            android:name=".AjustesView"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaMenu"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
