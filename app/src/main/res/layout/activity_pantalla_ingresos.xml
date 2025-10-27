@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PantallaIngresos">
+
+    <View
+        android:id="@+id/marcoSuperior"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#4b1a20"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mini_ingresos"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@id/marcoSuperior"
+        app:layout_constraintEnd_toEndOf="@id/marcoSuperior"
+        android:layout_margin="25dp"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="#c9a9ae">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:text="Saldo disponible:"
+            android:textSize="16sp">
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="152dp"
+        android:layout_height="45dp"
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="#4B1920"
+        app:layout_constraintStart_toStartOf="@id/mini_ingresos"
+        app:layout_constraintEnd_toEndOf="@id/mini_ingresos"
+        app:layout_constraintBottom_toBottomOf="@id/mini_ingresos"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:text="$2093.0000"
+            android:textSize="25sp"
+            android:textColor="#C9A9AE">
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/marcoSuperior"
+        android:layout_marginStart="20dp"
+        android:text="Ingresos"
+        android:textSize="30sp"
+        android:textColor="@color/white">
+    </TextView>
+
+    <Button
+        android:id="@+id/anadir_ingreso_boton"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#4b1a20"
+        android:layout_marginBottom="10dp"
+        android:text="Añadir Ingreso"
+        android:textSize="20sp">
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

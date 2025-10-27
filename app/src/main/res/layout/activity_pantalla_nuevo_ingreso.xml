@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PantallaNuevoIngreso"
+    android:background="#c9a9ae">
+
+    <View
+        android:id="@+id/marcoSuperior"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#4b1a20"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="45dp"
+        android:text="Nuevo Ingreso"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold">
+    </TextView>
+
+    <Button
+        android:id="@+id/agregarIngreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/marcoSuperior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Agregar Ingreso"
+        android:textSize="16sp"
+        android:backgroundTint="#4B1920">
+    </Button>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/agregarIngreso"
+        android:layout_margin="20dp"
+        android:hint="Nota en lo que se gasto"
+        android:textColorHint="#FFF4F6"
+        android:textSize="24sp">
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/marcoSuperior"
+        android:layout_margin="40dp"
+        android:text="Monto del ingreso: "
+        android:textColor="#4B1920"
+        android:textSize="24sp">
+    </TextView>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/marcoSuperior"
+        android:layout_margin="100dp"
+        android:padding="15dp"
+        android:background="#A06B73"
+        android:hint="Ingrese solo numeros"
+        android:textSize="16sp"
+        android:textColorHint="@color/white">
+    </EditText>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
