@@ -27,6 +27,24 @@
             android:name=".PantallaMenu"
             android:exported="false" />
         <activity
+            android:name=".PantallaCarga"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaUsuarios"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaResultados"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaCategoria"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaCalendario"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaPrincipal"
+            android:exported="false"/>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

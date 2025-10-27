@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PantallaUsuarios"
+    android:background="#FFF4F6">
+
+
+    <View
+        android:id="@+id/view_cuadradoGuindoUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="#4B1920"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/svg_user"
+        android:layout_width="110dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_user_user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="40dp"
+        />
+    <TextView
+        android:id="@+id/text_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Usuario"
+        android:textStyle="bold"
+        android:textColor="#FFF4F6"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/svg_user"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/nameUserFijo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Nombre de usuario: "
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_cuadradoGuindoUsuario"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <TextView
+        android:id="@+id/nameUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tylon"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameUserFijo"
+        android:layout_marginTop="2dp"
+        />
+
+
+    <TextView
+        android:id="@+id/nameContraseñaFijo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Contraseña: "
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameUser"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/nameContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="********"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameContraseñaFijo"
+        android:layout_marginTop="2dp"
+        />
+    <TextView
+        android:id="@+id/preguntaContraseña"
+        android:layout_width="310dp"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:text="QUIERES CAMBIAR TU CONTRASEÑA?"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:background="@color/rosa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameContraseña"
+        android:layout_marginTop="5dp"
+        />
+
+
+    <TextView
+        android:id="@+id/textIngreseCon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Ingresa tu nueva contraseña"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/preguntaContraseña"
+        android:layout_marginTop="15dp"/>
+
+
+    <EditText
+        android:id="@+id/editTextNuevaCon"
+        android:layout_width="266dp"
+        android:layout_height="45dp"
+        android:hint="minimo 8 carácteres"
+        android:background="@drawable/user_edit_text_rounded"
+        android:paddingLeft="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textIngreseCon"
+        android:layout_marginTop="15dp"/>
+
+
+    <Button
+        android:id="@+id/bottomGuardarContra"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:background="@drawable/boton_categoria"
+        android:backgroundTint="@null"
+        app:backgroundTint="@null"
+        android:text="GUARDAR CONTRASEÑA"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:maxLines="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextNuevaCon"
+        android:layout_marginTop="15dp"/>
+
+
+    <Button
+        android:id="@+id/bottomCerrarSesion"
+        android:layout_width="251dp"
+        android:layout_height="74dp"
+        android:backgroundTint="@color/guindoOscuro"
+        android:text="CERRAR SESIÓN"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottomGuardarContra"
+        android:layout_marginTop="40dp"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
