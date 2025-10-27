@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF4F6"
+    tools:context=".PantallaGastosCtegoria">
+
+    <TextView
+        android:id="@+id/text_selectCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:background="#4B1920"
+        android:gravity="center"
+        android:text="Agregar gasto"
+        android:textStyle="bold"
+        android:textColor="#FFF4F6"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Deudas_boton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+
+        android:background="@drawable/button"
+        android:backgroundTint="@null"
+        app:backgroundTint="@null"
+        android:paddingTop="0dp"
+
+        android:text="Deudas"
+        android:textSize="14sp"
+        android:textColor="#33090F"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+
+        android:textAllCaps="false"
+        android:drawableTop="@drawable/deudas_icono"
+        android:drawablePadding="16dp"
+        />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/comida_boton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+
+        android:background="@drawable/button"
+        android:backgroundTint="@null"
+        android:drawableTop="@drawable/comida_icono"
+        android:drawablePadding="16dp"
+
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:paddingTop="0dp"
+        android:text="Comida"
+        android:textAllCaps="false"
+
+        android:textColor="#33090F"
+        android:textSize="14sp"
+        app:backgroundTint="@null" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Entrenimiento_boton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+
+        android:background="@drawable/button"
+        android:backgroundTint="@null"
+        android:drawableTop="@drawable/palomitas_icono"
+        android:drawablePadding="16dp"
+
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:paddingTop="0dp"
+        android:text="entrenimiento"
+        android:textAllCaps="false"
+
+        android:textColor="#33090F"
+        android:textSize="14sp"
+        app:backgroundTint="@null"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Transporte_boton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+
+        android:background="@drawable/button"
+        android:backgroundTint="@null"
+        android:drawableTop="@drawable/transporte_icono"
+        android:drawablePadding="16dp"
+
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:paddingTop="0dp"
+        android:text="Transporte"
+        android:textAllCaps="false"
+
+        android:textColor="#33090F"
+        android:textSize="13sp"
+        app:backgroundTint="@null" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Mercado_boton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+
+        android:background="@drawable/button"
+        android:backgroundTint="@null"
+        android:drawableTop="@drawable/shop_icono"
+        android:drawablePadding="16dp"
+
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:paddingTop="0dp"
+        android:text="Mercado"
+        android:textAllCaps="false"
+
+        android:textColor="#33090F"
+        android:textSize="14sp"
+        app:backgroundTint="@null" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mantenimiento_boton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+
+        android:background="@drawable/button"
+        android:backgroundTint="@null"
+        android:drawableTop="@drawable/mantenimiento_icono"
+        android:drawablePadding="16dp"
+
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:paddingTop="0dp"
+        android:text="Mantenimiento"
+        android:textAllCaps="false"
+
+        android:textColor="#33090F"
+        android:textSize="10sp"
+        app:backgroundTint="@null" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ropa_boton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+
+        android:background="@drawable/button"
+        android:backgroundTint="@null"
+        android:drawableTop="@drawable/ropa_icono"
+        android:drawablePadding="16dp"
+
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:paddingTop="0dp"
+        android:text="Ropa"
+        android:textAllCaps="false"
+
+        android:textColor="#33090F"
+        android:textSize="14sp"
+        app:backgroundTint="@null" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/estudios_boton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+
+        android:background="@drawable/button"
+        android:backgroundTint="@null"
+        android:drawableTop="@drawable/educacion_icono"
+        android:drawablePadding="16dp"
+
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:paddingTop="0dp"
+        android:text="Estudios"
+        android:textAllCaps="false"
+
+        android:textColor="#33090F"
+        android:textSize="14sp"
+        app:backgroundTint="@null"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/makeup_boton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+
+        android:background="@drawable/button"
+        android:backgroundTint="@null"
+        android:drawableTop="@drawable/makeup_icono"
+        android:drawablePadding="16dp"
+
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:paddingTop="0dp"
+        android:text="Make up"
+        android:textAllCaps="false"
+
+        android:textColor="#33090F"
+        android:textSize="14sp"
+        app:backgroundTint="@null"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Salud_boton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+
+        android:background="@drawable/button"
+        android:backgroundTint="@null"
+        android:drawableTop="@drawable/medical_icono"
+        android:drawablePadding="16dp"
+
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:paddingTop="0dp"
+        android:text="Salud"
+        android:textAllCaps="false"
+
+        android:textColor="#33090F"
+        android:textSize="14sp"
+        app:backgroundTint="@null" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Regalos_boton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+
+        android:background="@drawable/button"
+        android:backgroundTint="@null"
+        android:drawableTop="@drawable/gift_svgrepo_com"
+        android:drawablePadding="16dp"
+
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:paddingTop="0dp"
+        android:text="Regalos"
+        android:textAllCaps="false"
+
+        android:textColor="#33090F"
+        android:textSize="14sp"
+        app:backgroundTint="@null" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flowCategorias"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text_selectCategoria"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:constraint_referenced_ids="Deudas_boton,comida_boton,Entrenimiento_boton,Transporte_boton,Mercado_boton,mantenimiento_boton,ropa_boton,estudios_boton,makeup_boton,Salud_boton,Regalos_boton"
+
+        app:flow_wrapMode="aligned"
+        app:flow_maxElementsWrap="3"
+        app:flow_horizontalGap="27dp"
+        app:flow_verticalGap="27dp"
+        app:flow_horizontalStyle="packed"
+        app:flow_verticalStyle="packed"
+        app:flow_horizontalBias="0.5"
+        app:flow_verticalBias="0"
+
+        android:paddingStart="27dp"
+        android:paddingEnd="27dp"
+        android:paddingTop="27dp"
+        android:paddingBottom="27dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Escoge la categoria a la que pertenece tu gasto"
+        android:background="#FFF4F6"
+        android:textStyle="bold"
+        android:textColor="#33090F"
+        android:textSize="19sp"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/flowCategorias"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

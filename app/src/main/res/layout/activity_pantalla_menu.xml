@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PantallaMenu"
+    android:background="#A06B73">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logomonedita"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+    </ImageView>
+
+
+
+    <Button
+        android:id="@+id/ajustes"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="Ajustes"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#A06B73"/>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/ajutes_icono"
+        app:layout_constraintEnd_toStartOf="@id/ajustes"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        >
+
+    </ImageView>
+
+    <View
+        android:id="@+id/division1"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:background="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/ajustes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_perfil"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#A06B73"
+        android:text="Perfil"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/division1" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/perfil_icono"
+        app:layout_constraintEnd_toStartOf="@id/btn_perfil"
+        app:layout_constraintTop_toBottomOf="@id/division1">
+
+    </ImageView>
+
+    <View
+        android:id="@+id/division2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/btn_perfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/ayuda"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="Ayuda"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:backgroundTint="#A06B73"
+        app:layout_constraintTop_toBottomOf="@id/division2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/ayuda_icono"
+        app:layout_constraintEnd_toStartOf="@id/ayuda"
+        app:layout_constraintTop_toBottomOf="@id/division2">
+
+    </ImageView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
