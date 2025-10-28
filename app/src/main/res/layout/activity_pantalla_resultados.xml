@@ -32,31 +32,58 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="45dp"/>
+
     <TextView
         android:id="@+id/text_fecha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Fecha: 16/10/25"
+        android:text="Fecha:"
+        android:textColor="@color/resultadoFechaCat"
+        android:textSize="14sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/text_resultadoFecha"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_titulo" />
+
+    <TextView
+        android:id="@+id/text_resultadoFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="17/10/25"
         android:textColor="@color/resultadoFechaCat"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_fecha"
         app:layout_constraintTop_toBottomOf="@+id/text_titulo"/>
 
 
     <TextView
-        android:id="@+id/text_cat"
+        android:id="@+id/text_categoria"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Categoria: Comida"
+        android:text="Categoria:"
+        android:textColor="@color/resultadoFechaCat"
+        android:textSize="14sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/text_resultadoCategoria"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_fecha" />
+
+    <TextView
+        android:id="@+id/text_resultadoCategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Comida"
         android:textColor="@color/resultadoFechaCat"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_categoria"
         app:layout_constraintTop_toBottomOf="@+id/text_fecha"/>
 
 

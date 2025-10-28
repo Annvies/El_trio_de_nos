@@ -3,7 +3,7 @@
 
 
     <style name="MyDatePickerStyle" parent="@android:style/Widget.Material.DatePicker">
-        <item name="android:headerBackground">@color/guindo</item>
+        <item name="android:headerBackground">@color/rosa</item>
         <item name="android:calendarViewStyle">@style/MyCalendarViewStyle</item>
     </style>
 
@@ -39,7 +39,7 @@
         <item name="colorControlHighlight">@color/guindo</item>
 
 
-        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorPrimary">@color/guindoOscuro</item>
     </style>
 
     <style name="ThemeOverlay.App"/>
