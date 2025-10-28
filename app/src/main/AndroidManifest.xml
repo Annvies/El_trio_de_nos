@@ -27,17 +27,32 @@
             android:name=".PantallaMenu"
             android:exported="false" />
         <activity
-            android:name=".PantallaCarga"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".PantallaUsuarios"
-            android:exported="true" >
+            android:name=".PantallaLogIn"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaNuevoIngreso"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaIngresos"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaPrincipal"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".PantallaCarga"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaUsuarios"
+            android:exported="false" />
         <activity
             android:name=".PantallaResultados"
             android:exported="false" />
@@ -47,14 +62,7 @@
         <activity
             android:name=".PantallaCalendario"
             android:exported="false" />
-        <activity
-            android:name=".PantallaPrincipal"
-            android:exported="false"/>
-        <activity
-            android:name=".MainActivity"
-            android:exported="false">
 
-        </activity>
     </application>
 
 </manifest>

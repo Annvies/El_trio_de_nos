@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PantallaPrincipal">
+
+    <View
+        android:id="@+id/marcoSuperior"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#4b1a20"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toTopOf="@id/marcoSuperior"
+        app:layout_constraintStart_toStartOf="@id/marcoSuperior"
+        app:layout_constraintEnd_toEndOf="@id/marcoSuperior"
+        android:src="@drawable/logomoneditacofe">
+    </ImageView>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="@id/marcoSuperior"
+        app:layout_constraintTop_toTopOf="@id/marcoSuperior"
+        android:layout_margin="40dp"
+        android:src="@drawable/lupaicono">
+    </ImageView>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="@id/marcoSuperior"
+        app:layout_constraintTop_toTopOf="@id/marcoSuperior"
+        android:layout_margin="40dp"
+        android:src="@drawable/menuicono">
+    </ImageView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/recuadro_saldo"
+        android:layout_width="300dp"
+        android:layout_height="110dp"
+        app:layout_constraintTop_toBottomOf="@id/marcoSuperior"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="15dp">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#c9a9ae">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Saldo Disponible:"
+                android:textSize="20sp"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        app:layout_constraintTop_toTopOf="@id/recuadro_saldo"
+        app:layout_constraintEnd_toEndOf="@id/recuadro_saldo"
+        app:layout_constraintStart_toStartOf="@id/recuadro_saldo"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="30dp"
+        android:backgroundTint="#743b42">
+
+        <ImageView
+            android:id="@+id/anadir_ingreso_boton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="210dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/anadiricono">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:text="$ 3402887340"
+            android:textSize="25sp"
+            android:textColor="#c9a9ae">
+        </TextView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@id/recuadro_saldo"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="30dp"
+        android:backgroundTint="#F5C5CC"
+        android:visibility="visible">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Ingresa tu primer gasto para verlo"
+                android:textSize="18sp"
+                android:textColor="#4B1920"
+                android:textStyle="bold">
+            </TextView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/anadir_gasto_boton"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#4b1a20"
+        android:text="Añadir gasto"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
