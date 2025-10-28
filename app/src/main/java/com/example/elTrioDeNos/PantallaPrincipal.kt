@@ -34,6 +34,16 @@ class PantallaPrincipal : AppCompatActivity() {
             startActivity(cambioAIngresos)
         }
 
+        binding.anadirGastoBoton.setOnClickListener {
+            val cambioPantallaGastosCat: Intent = Intent(contexto, PantallaGastosCtegoria::class.java)
+            startActivity(cambioPantallaGastosCat)
+        }
+
+        binding.menuBoton.setOnClickListener {
+            val cambioPantallaMenu: Intent = Intent(contexto, PantallaMenu::class.java)
+            startActivity(cambioPantallaMenu)
+        }
+
 
     }
 }
