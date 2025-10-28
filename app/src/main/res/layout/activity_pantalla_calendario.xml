@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PantallaCalendario"
+    android:background="#FFF4F6">
+
+    <TextView
+        android:id="@+id/text_selectFecha"
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:background="#4B1920"
+        android:gravity="center"
+        android:text="Seleccione una fecha"
+        android:textStyle="bold"
+        android:textColor="#FFF4F6"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/text_selectFecha"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSetDate"
+        android:datePickerMode="calendar"
+        android:calendarViewShown="true"
+        android:spinnersShown="false"
+        android:padding="8dp"
+        android:theme="@style/ThemeOverlay.App.DatePicker"/>
+
+
+    <Button
+        android:id="@+id/buttonSetDate"
+        android:layout_width="237dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/guindo"
+        android:text="Seleccionar Fecha"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+
+        android:gravity="center"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

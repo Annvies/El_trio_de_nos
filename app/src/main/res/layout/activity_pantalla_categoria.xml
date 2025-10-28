@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PantallaCategoria"
+    android:background="#FFF4F6">
+
+
+    <TextView
+        android:id="@+id/text_selectCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:background="#4B1920"
+        android:gravity="center"
+        android:text="Seleccione una categoría"
+        android:textStyle="bold"
+        android:textColor="#FFF4F6"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_categoria_bus1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+
+
+        android:background="@drawable/boton_categoria"
+        android:backgroundTint="@null"
+        app:backgroundTint="@null"
+        android:paddingTop="0dp"
+
+
+        android:text="General"
+        android:textSize="14sp"
+        android:textColor="#33090F"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+
+
+        android:textAllCaps="false"
+        android:drawableTop="@drawable/ic_cat_general"
+        android:drawablePadding="16dp"
+        />
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_categoria_bus2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+
+
+        android:background="@drawable/boton_categoria"
+        android:backgroundTint="@null"
+        android:drawableTop="@drawable/ic_cat_food"
+        android:drawablePadding="16dp"
+
+
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:paddingTop="0dp"
+        android:text="Comida"
+        android:textAllCaps="false"
+
+
+        android:textColor="#33090F"
+        android:textSize="14sp"
+        app:backgroundTint="@null" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_categoria_bus3"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+
+
+        android:background="@drawable/boton_categoria"
+        android:backgroundTint="@null"
+        android:drawableTop="@drawable/ic_cat_entertainment"
+        android:drawablePadding="16dp"
+
+
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:paddingTop="0dp"
+        android:text="Diversión"
+        android:textAllCaps="false"
+
+
+        android:textColor="#33090F"
+        android:textSize="14sp"
+        app:backgroundTint="@null"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_categoria_bus4"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+
+
+        android:background="@drawable/boton_categoria"
+        android:backgroundTint="@null"
+        android:drawableTop="@drawable/ic_cat_transport"
+        android:drawablePadding="16dp"
+
+
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:paddingTop="0dp"
+        android:text="Transporte"
+        android:textAllCaps="false"
+
+
+        android:textColor="#33090F"
+        android:textSize="13sp"
+        app:backgroundTint="@null" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_categoria_bus5"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+
+
+        android:background="@drawable/boton_categoria"
+        android:backgroundTint="@null"
+        android:drawableTop="@drawable/ic_cat_shop"
+        android:drawablePadding="16dp"
+
+
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:paddingTop="0dp"
+        android:text="Mercado"
+        android:textAllCaps="false"
+
+
+        android:textColor="#33090F"
+        android:textSize="14sp"
+        app:backgroundTint="@null" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_categoria_bus6"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+
+
+        android:background="@drawable/boton_categoria"
+        android:backgroundTint="@null"
+        android:drawableTop="@drawable/ic_cat_settings"
+        android:drawablePadding="16dp"
+
+
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:paddingTop="0dp"
+        android:text="Mantenimiento"
+        android:textAllCaps="false"
+
+
+        android:textColor="#33090F"
+        android:textSize="10sp"
+        app:backgroundTint="@null" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_categoria_bus7"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+
+
+        android:background="@drawable/boton_categoria"
+        android:backgroundTint="@null"
+        android:drawableTop="@drawable/ic_cat_clothes"
+        android:drawablePadding="16dp"
+
+
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:paddingTop="0dp"
+        android:text="Ropa"
+        android:textAllCaps="false"
+
+
+        android:textColor="#33090F"
+        android:textSize="14sp"
+        app:backgroundTint="@null" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_categoria_bus8"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+
+
+        android:background="@drawable/boton_categoria"
+        android:backgroundTint="@null"
+        android:drawableTop="@drawable/ic_cat_education"
+        android:drawablePadding="16dp"
+
+
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:paddingTop="0dp"
+        android:text="Estudios"
+        android:textAllCaps="false"
+
+
+        android:textColor="#33090F"
+        android:textSize="14sp"
+        app:backgroundTint="@null"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_categoria_bus9"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+
+
+        android:background="@drawable/boton_categoria"
+        android:backgroundTint="@null"
+        android:drawableTop="@drawable/ic_cat_makeup"
+        android:drawablePadding="16dp"
+
+
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:paddingTop="0dp"
+        android:text="Make up"
+        android:textAllCaps="false"
+
+
+        android:textColor="#33090F"
+        android:textSize="14sp"
+        app:backgroundTint="@null"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_categoria_bus10"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+
+
+        android:background="@drawable/boton_categoria"
+        android:backgroundTint="@null"
+        android:drawableTop="@drawable/ic_cat_health"
+        android:drawablePadding="16dp"
+
+
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:paddingTop="0dp"
+        android:text="Salud"
+        android:textAllCaps="false"
+
+
+        android:textColor="#33090F"
+        android:textSize="14sp"
+        app:backgroundTint="@null" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_categoria_bus11"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+
+
+        android:background="@drawable/boton_categoria"
+        android:backgroundTint="@null"
+        android:drawableTop="@drawable/ic_cat_gift"
+        android:drawablePadding="16dp"
+
+
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:paddingTop="0dp"
+        android:text="Regalos"
+        android:textAllCaps="false"
+
+
+        android:textColor="#33090F"
+        android:textSize="14sp"
+        app:backgroundTint="@null" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_categoria_bus12"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+
+
+        android:background="@drawable/boton_categoria"
+        android:backgroundTint="@null"
+        android:drawableTop="@drawable/ic_cat_debt"
+        android:drawablePadding="16dp"
+
+
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:paddingTop="0dp"
+        android:text="Deudas"
+        android:textAllCaps="false"
+
+
+        android:textColor="#33090F"
+        android:textSize="14sp"
+        app:backgroundTint="@null"/>
+
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flowCategorias"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text_selectCategoria"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+
+        app:constraint_referenced_ids="btn_categoria_bus1,btn_categoria_bus2,btn_categoria_bus3,btn_categoria_bus4,btn_categoria_bus5,btn_categoria_bus6,btn_categoria_bus7,btn_categoria_bus8,btn_categoria_bus9,btn_categoria_bus10,btn_categoria_bus11,btn_categoria_bus12"
+
+
+        app:flow_wrapMode="aligned"
+        app:flow_maxElementsWrap="3"
+        app:flow_horizontalGap="27dp"
+        app:flow_verticalGap="27dp"
+        app:flow_horizontalStyle="packed"
+        app:flow_verticalStyle="packed"
+        app:flow_horizontalBias="0.5"
+        app:flow_verticalBias="0"
+
+
+        android:paddingStart="27dp"
+        android:paddingEnd="27dp"
+        android:paddingTop="27dp"
+        android:paddingBottom="27dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Escoge la categoría que desea                      buscar"
+        android:textStyle="bold"
+        android:textColor="@color/guindoOscuro"
+        android:textSize="19sp"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/flowCategorias" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

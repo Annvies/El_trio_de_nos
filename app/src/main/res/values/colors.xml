@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="rosa">#F5C5CC</color>
+    <color name="guindoOscuro">#33090F</color>
+    <color name="guindo">#4B1920</color>
+    <color name="resultadoFechaCat">#b59a9e</color>
+    <color name="guindo_40">#664B1920</color>
 </resources>
