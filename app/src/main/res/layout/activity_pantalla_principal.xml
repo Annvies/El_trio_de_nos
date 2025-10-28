@@ -24,6 +24,7 @@
     </ImageView>
 
     <ImageView
+        android:id="@+id/boton_Lupa"
         android:layout_width="60dp"
         android:layout_height="60dp"
         app:layout_constraintStart_toStartOf="@id/marcoSuperior"

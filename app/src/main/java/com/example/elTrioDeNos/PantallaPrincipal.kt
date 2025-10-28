@@ -11,6 +11,7 @@ import com.example.elTrioDeNos.databinding.ActivityPantallaPrincipalBinding
 
 class PantallaPrincipal : AppCompatActivity() {
 
+
     private lateinit var binding: ActivityPantallaPrincipalBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,6 +35,9 @@ class PantallaPrincipal : AppCompatActivity() {
             startActivity(cambioAIngresos)
         }
 
-
+        binding.botonLupa.setOnClickListener {
+            val cambioACalendario: Intent = Intent(contexto, PantallaCalendario::class.java)
+            startActivity(cambioACalendario)
+        }
     }
 }

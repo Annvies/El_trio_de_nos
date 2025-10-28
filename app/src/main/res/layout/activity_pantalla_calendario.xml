@@ -41,7 +41,7 @@
 
 
     <Button
-        android:id="@+id/buttonSetDate"
+        android:id="@+id/button_Set_Date"
         android:layout_width="237dp"
         android:layout_height="70dp"
         android:layout_marginBottom="30dp"
