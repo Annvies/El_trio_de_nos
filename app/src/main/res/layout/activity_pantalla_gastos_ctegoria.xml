@@ -40,7 +40,7 @@
         android:padding="3dp"
 
         android:textAllCaps="false"
-        android:drawableTop="@drawable/deudas_icono"
+        android:drawableTop="@drawable/ic_cat_debt"
         android:drawablePadding="16dp"
         />
 
@@ -52,7 +52,7 @@
 
         android:background="@drawable/button"
         android:backgroundTint="@null"
-        android:drawableTop="@drawable/comida_icono"
+        android:drawableTop="@drawable/ic_cat_food"
         android:drawablePadding="16dp"
 
         android:includeFontPadding="false"
@@ -73,18 +73,18 @@
 
         android:background="@drawable/button"
         android:backgroundTint="@null"
-        android:drawableTop="@drawable/palomitas_icono"
+        android:drawableTop="@drawable/ic_cat_entertainment"
         android:drawablePadding="16dp"
 
         android:includeFontPadding="false"
         android:maxLines="1"
         android:padding="3dp"
         android:paddingTop="0dp"
-        android:text="entrenimiento"
+        android:text="Entrenimiento"
         android:textAllCaps="false"
 
         android:textColor="#33090F"
-        android:textSize="14sp"
+        android:textSize="9sp"
         app:backgroundTint="@null"/>
 
     <com.google.android.material.button.MaterialButton
@@ -94,7 +94,7 @@
 
         android:background="@drawable/button"
         android:backgroundTint="@null"
-        android:drawableTop="@drawable/transporte_icono"
+        android:drawableTop="@drawable/ic_cat_transport"
         android:drawablePadding="16dp"
 
         android:includeFontPadding="false"
@@ -115,7 +115,7 @@
 
         android:background="@drawable/button"
         android:backgroundTint="@null"
-        android:drawableTop="@drawable/shop_icono"
+        android:drawableTop="@drawable/ic_cat_shop"
         android:drawablePadding="16dp"
 
         android:includeFontPadding="false"
@@ -136,7 +136,7 @@
 
         android:background="@drawable/button"
         android:backgroundTint="@null"
-        android:drawableTop="@drawable/mantenimiento_icono"
+        android:drawableTop="@drawable/ic_cat_settings"
         android:drawablePadding="16dp"
 
         android:includeFontPadding="false"
@@ -157,7 +157,7 @@
 
         android:background="@drawable/button"
         android:backgroundTint="@null"
-        android:drawableTop="@drawable/ropa_icono"
+        android:drawableTop="@drawable/ic_cat_clothes"
         android:drawablePadding="16dp"
 
         android:includeFontPadding="false"
@@ -178,7 +178,7 @@
 
         android:background="@drawable/button"
         android:backgroundTint="@null"
-        android:drawableTop="@drawable/educacion_icono"
+        android:drawableTop="@drawable/ic_cat_education"
         android:drawablePadding="16dp"
 
         android:includeFontPadding="false"
@@ -199,7 +199,7 @@
 
         android:background="@drawable/button"
         android:backgroundTint="@null"
-        android:drawableTop="@drawable/makeup_icono"
+        android:drawableTop="@drawable/ic_cat_makeup"
         android:drawablePadding="16dp"
 
         android:includeFontPadding="false"
@@ -220,7 +220,7 @@
 
         android:background="@drawable/button"
         android:backgroundTint="@null"
-        android:drawableTop="@drawable/medical_icono"
+        android:drawableTop="@drawable/ic_cat_health"
         android:drawablePadding="16dp"
 
         android:includeFontPadding="false"
@@ -241,7 +241,7 @@
 
         android:background="@drawable/button"
         android:backgroundTint="@null"
-        android:drawableTop="@drawable/gift_svgrepo_com"
+        android:drawableTop="@drawable/ic_cat_gift"
         android:drawablePadding="16dp"
 
         android:includeFontPadding="false"
@@ -289,5 +289,7 @@
         android:textSize="19sp"
         android:gravity="center"
         android:paddingTop="30dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
         app:layout_constraintTop_toBottomOf="@+id/flowCategorias"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
