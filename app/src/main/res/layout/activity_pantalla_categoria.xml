@@ -94,12 +94,12 @@
         android:maxLines="1"
         android:padding="3dp"
         android:paddingTop="0dp"
-        android:text="Diversión"
+        android:text="Entretenimiento"
         android:textAllCaps="false"
 
 
         android:textColor="#33090F"
-        android:textSize="14sp"
+        android:textSize="9sp"
         app:backgroundTint="@null"/>
 
 
