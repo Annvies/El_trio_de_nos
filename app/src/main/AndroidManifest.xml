@@ -16,7 +16,8 @@
             android:exported="false" />
         <activity
             android:name=".PantallaGastosCtegoria"
-            android:exported="false" />
+            android:exported="false" >
+        </activity>
         <activity
             android:name=".AyudaView"
             android:exported="false" />
