@@ -29,7 +29,8 @@
             android:layout_height="30dp"
             android:layout_margin="5dp"
             android:text="Saldo disponible:"
-            android:textSize="16sp">
+            android:textSize="16sp"
+            android:textColor="@color/guindo">
         </TextView>
 
     </androidx.cardview.widget.CardView>
@@ -63,8 +64,9 @@
         app:layout_constraintBottom_toBottomOf="@id/marcoSuperior"
         android:layout_marginStart="20dp"
         android:text="Ingresos"
+        android:textStyle="bold"
         android:textSize="30sp"
-        android:textColor="@color/white">
+        android:textColor="#fff4f6">
     </TextView>
 
     <Button
@@ -75,9 +77,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:backgroundTint="#4b1a20"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="35dp"
         android:text="Añadir Ingreso"
-        android:textSize="20sp">
+        android:textSize="26sp">
     </Button>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

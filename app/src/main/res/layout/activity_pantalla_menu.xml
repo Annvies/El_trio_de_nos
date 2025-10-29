@@ -12,7 +12,8 @@
         android:id="@+id/logo"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:src="@drawable/logomoneditarosita"
+        android:src="@drawable/logo_fondoa06b73"
+        android:layout_marginTop="98dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -22,88 +23,47 @@
 
 
 
-    <Button
-        android:id="@+id/ajustes"
-        android:layout_width="120dp"
-        android:layout_height="40dp"
-        android:text="Ajustes"
-        android:textColor="@android:color/white"
-        android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@id/logo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:backgroundTint="#A06B73"/>
-    <ImageView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_margin="5dp"
-        android:src="@drawable/ajutes_icono"
-        app:layout_constraintEnd_toStartOf="@id/ajustes"
-        app:layout_constraintTop_toBottomOf="@id/logo"
-        >
 
-    </ImageView>
-
-    <View
-        android:id="@+id/division1"
-        android:layout_width="0dp"
-        android:layout_height="4dp"
-        android:background="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@id/ajustes"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_perfil"
-        android:layout_width="120dp"
-        android:layout_height="40dp"
+        android:layout_width="174dp"
+        android:layout_height="122dp"
         android:backgroundTint="#A06B73"
         android:text="Perfil"
         android:textColor="@android:color/white"
-        android:textSize="18sp"
+        android:drawableTop="@drawable/ic_menu_user"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/division1" />
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:iconSize="36dp"
+        app:cornerRadius="7dp"
+        app:strokeColor="#FFF4F6"
+        app:strokeWidth="2dp"
+        android:layout_marginTop="40dp"/>
 
-    <ImageView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_margin="5dp"
-        android:src="@drawable/perfil_icono"
-        app:layout_constraintEnd_toStartOf="@id/btn_perfil"
-        app:layout_constraintTop_toBottomOf="@id/division1">
 
-    </ImageView>
 
-    <View
-        android:id="@+id/division2"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:background="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@id/btn_perfil"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/ayuda"
-        android:layout_width="120dp"
-        android:layout_height="40dp"
+        android:layout_width="174dp"
+        android:layout_height="122dp"
+        android:backgroundTint="#A06B73"
         android:text="Ayuda"
         android:textColor="@android:color/white"
-        android:textSize="18sp"
-        android:backgroundTint="#A06B73"
-        app:layout_constraintTop_toBottomOf="@id/division2"
+        android:drawableTop="@drawable/ic_menu_help"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/btn_perfil"
+        app:iconSize="36dp"
+        app:cornerRadius="7dp"
+        app:strokeColor="#FFF4F6"
+        app:strokeWidth="2dp"
+        android:layout_marginTop="40dp" />
 
-    <ImageView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_margin="5dp"
-        android:src="@drawable/ayuda_icono"
-        app:layout_constraintEnd_toStartOf="@id/ayuda"
-        app:layout_constraintTop_toBottomOf="@id/division2">
 
-    </ImageView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
