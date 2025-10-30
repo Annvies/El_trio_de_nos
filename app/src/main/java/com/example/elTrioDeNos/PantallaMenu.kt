@@ -30,7 +30,7 @@ class PantallaMenu : AppCompatActivity() {
         val contexto: Context = this
 
         binding.btnAyuda.setOnClickListener {
-            val intentAyuda = Intent(contexto, AyudaView::class.java)
+            val intentAyuda = Intent(contexto, PantallaAyudaView::class.java)
             startActivity(intentAyuda)
         }
 
