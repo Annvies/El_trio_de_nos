@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF4F6"
+    android:background="?attr/colorSurface"
     tools:context=".PantallaAyudaView">
 
 
@@ -21,24 +21,30 @@
     <TextView
         android:id="@+id/titulo"
         android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
         android:layout_height="0dp"
         app:layout_constraintTop_toTopOf="@id/marcoSuperior"
         app:layout_constraintBottom_toBottomOf="@id/marcoSuperior"
         android:gravity="center"
         android:text="Ayuda"
         android:textStyle="bold"
-        android:textColor="#FFF4F6"
-        android:textSize="24sp">
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
     </TextView>
 
     <ImageView
         android:layout_width="39dp"
         android:layout_height="39dp"
-        android:src="@drawable/ayuda_icono"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="64dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/ic_menu_help"
         app:layout_constraintStart_toStartOf="@+id/titulo"
         app:layout_constraintBottom_toBottomOf="@id/marcoSuperior"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="130dp"/>
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
         android:layout_width="match_parent"

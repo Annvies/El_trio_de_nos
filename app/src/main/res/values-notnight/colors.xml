@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+
     <color name="primary">#4B1920</color>
     <color name="on_primary">#FFFFFFFF</color>
     <color name="primary_container">#743B42</color>
@@ -26,10 +27,10 @@
     <color name="inverse_surface">#33090F</color>
     <color name="inverse_on_surface">#FFF4F6</color>
 
-    <color name="surface">#1F1A1C</color>
-    <color name="on_surface">#F5F5F5</color>
+    <color name="surface">#FFF4F6</color>
+    <color name="on_surface">#33090F</color>
     <color name="surface_variant">#C9A9AE</color>
     <color name="on_surface_variant">#33090F</color>
-    <color name="background">#1F1A1C</color>
-    <color name="on_background">#F5F5F5</color>
+    <color name="background">#FFF4F6</color>
+    <color name="on_background">#33090F</color>
 </resources>
