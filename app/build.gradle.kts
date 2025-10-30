@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.elTrioDeNos"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
@@ -52,4 +52,5 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(platform("com.google.firebase:firebase-bom:34.4.0"))
     implementation("com.google.firebase:firebase-auth")
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
 }

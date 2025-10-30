@@ -22,9 +22,6 @@
             android:name=".AyudaView"
             android:exported="false" />
         <activity
-            android:name=".AjustesView"
-            android:exported="false" />
-        <activity
             android:name=".PantallaMenu"
             android:exported="false" />
         <activity
