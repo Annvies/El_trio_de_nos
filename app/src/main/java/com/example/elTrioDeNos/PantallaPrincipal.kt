@@ -31,6 +31,7 @@ class PantallaPrincipal : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
         val contexto: Context = this
 
         /////////////////bindeo con el recycleView////////////////////////////

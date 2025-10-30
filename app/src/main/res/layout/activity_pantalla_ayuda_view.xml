@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/colorSurface"
-    tools:context=".AyudaView">
+    tools:context=".PantallaAyudaView">
 
 
     <View
@@ -45,5 +45,28 @@
         app:layout_constraintStart_toStartOf="@+id/titulo"
         app:layout_constraintBottom_toBottomOf="@id/marcoSuperior"
         app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:breakStrategy="balanced"
+        android:lineHeight="24sp"
+        android:text="Bienvenido a Monedita tu asistente para controlar tus finanzas.\n
+-Desde el inicio podras ver tu saldo y los ultimos movimientos.\n
+-Para registrar un ingreso,presiona 'Añadir ingreso' y escribe el monto y una nota.\n
+-Para registrar un gasto, toca 'Agregar gasto', elige una categoria, escribe el monto y guarda.\n
+-En la lupa podras buscar movimientos por fecha o categoria.\n
+-En el menu de Ajustes puedes cambiar entre tema claro y oscuro.\n
+-En perfil podras ver tus datos,cambiar la contraaseña o cerrar sesion.\n
+Monedita esta hecha para que administrar tu dinero sea rapido, facil y visual.\n
+ATENTAMENTE: EL_TRIO_DE_NOS"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+        android:layout_margin="16dp"
+        android:textSize="19dp"
+        android:hyphenationFrequency="full"
+        >
+
+    </TextView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
