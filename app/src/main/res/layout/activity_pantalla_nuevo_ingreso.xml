@@ -38,7 +38,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:text="Agregar Ingreso"
         android:textSize="16sp"
-        android:backgroundTint="#4B1920">
+        android:backgroundTint="#4B1920"
+        android:textColor="@color/white">
     </Button>
 
     <EditText

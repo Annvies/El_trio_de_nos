@@ -55,7 +55,6 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:background="#753B43"
-        android:inputType="numberDecimal"
         android:padding="12dp"
         android:hint="Nota en que se gasto"
         android:textColor="@color/white"

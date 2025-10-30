@@ -10,6 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.elTrioDeNos.databinding.ActivityPantallaCategoriaBinding
 
 class PantallaCategoria : AppCompatActivity() {
+
     private lateinit var binding: ActivityPantallaCategoriaBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,8 +19,7 @@ class PantallaCategoria : AppCompatActivity() {
 
         binding = ActivityPantallaCategoriaBinding.inflate(layoutInflater)
         val view = binding.root
-
-        setContentView(R.layout.activity_pantalla_categoria)
+        setContentView(view)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -74,7 +74,6 @@ class PantallaCategoria : AppCompatActivity() {
             val cambioPantallaResultados: Intent = Intent(contexto, PantallaResultados::class.java)
             startActivity(cambioPantallaResultados)
         }
-
 
     }
 }

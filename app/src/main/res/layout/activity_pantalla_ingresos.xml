@@ -14,13 +14,27 @@
         app:layout_constraintTop_toTopOf="parent"
         android:background="#4b1a20"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/marcoSuperior"
+        android:layout_marginStart="20dp"
+        android:text="Ingresos"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#fff4f6">
+    </TextView>
+
     <androidx.cardview.widget.CardView
         android:id="@+id/mini_ingresos"
         android:layout_width="180dp"
         android:layout_height="100dp"
+        android:layout_marginEnd="20dp"
         app:layout_constraintBottom_toBottomOf="@id/marcoSuperior"
+        app:layout_constraintTop_toTopOf="@id/marcoSuperior"
         app:layout_constraintEnd_toEndOf="@id/marcoSuperior"
-        android:layout_margin="25dp"
         app:cardCornerRadius="10dp"
         android:backgroundTint="#c9a9ae">
 
@@ -56,27 +70,24 @@
 
     </androidx.cardview.widget.CardView>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/marcoSuperior"
-        android:layout_marginStart="20dp"
-        android:text="Ingresos"
-        android:textStyle="bold"
-        android:textSize="30sp"
-        android:textColor="#fff4f6">
-    </TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/marcoSuperior"
+        app:layout_constraintBottom_toTopOf="@id/btn_anadirIngreso">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
 
     <Button
-        android:id="@+id/anadir_ingreso_boton"
+        android:id="@+id/btn_anadirIngreso"
         android:layout_width="300dp"
         android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:backgroundTint="#4b1a20"
+        android:textColor="@color/white"
         android:layout_marginBottom="35dp"
         android:text="Añadir Ingreso"
         android:textSize="26sp">

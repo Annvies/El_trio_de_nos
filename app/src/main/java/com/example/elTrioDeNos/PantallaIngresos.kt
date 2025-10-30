@@ -27,7 +27,7 @@ class PantallaIngresos : AppCompatActivity() {
         }
         val contexto: Context = this
 
-        binding.anadirIngresoBoton.setOnClickListener {
+        binding.btnAnadirIngreso.setOnClickListener {
             val cambioNuevoIngreso: Intent = Intent(contexto, PantallaNuevoIngreso::class.java)
             startActivity(cambioNuevoIngreso)
         }
