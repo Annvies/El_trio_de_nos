@@ -78,10 +78,13 @@ class PantallaLogIn : AppCompatActivity() {
         }
     }
 
+
     fun crearCuenta(
         correo: String,
         pass: String
     ){
+        //auth.pass
+        //auth.signOut()
         auth.createUserWithEmailAndPassword(correo, pass)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {

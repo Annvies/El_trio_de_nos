@@ -34,8 +34,9 @@ class GastosRecyclerAdapter:
         inner class GastosViewHolder(private val binding: TarjetasGastosBinding) :
                 RecyclerView.ViewHolder(binding.root) {
                 fun binding(data: Gasto) {
-                        binding.precio.text = data.monto.toString()
+                        binding.precio.text = "$ " + data.monto.toString()
                         binding.nota.text = data.nota
+                        binding.fecha.text = data.fecha.toString()
                 }
         }
 

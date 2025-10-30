@@ -17,6 +17,7 @@ import kotlin.collections.listOf
 class PantallaPrincipal : AppCompatActivity() {
 
     private lateinit var binding: ActivityPantallaPrincipalBinding
+    val  adapter by lazy { GastosRecyclerAdapter() }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,11 +41,13 @@ class PantallaPrincipal : AppCompatActivity() {
 
         nuevaLista.add(Gasto(1.00, Date(), "grosso"))
 
-        //adapter.addDataCards(nuevaLista) // TO DO
+        nuevaLista.add(Gasto(17.00, Date(), "grosso"))
 
-        binding.recyclePantallaPrincipal.layoutManager = GridLayoutManager(contexto,2)
+        adapter.addDataCards(nuevaLista)
 
-        //binding.recyclePantallaPrincipal.adapter = adapter //TO DO
+        binding.recyclePantallaPrincipal.layoutManager = GridLayoutManager(contexto,1)
+
+        binding.recyclePantallaPrincipal.adapter = adapter
 
         ////////////////////////////////////////////////////////////////////////
 

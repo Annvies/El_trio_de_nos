@@ -106,7 +106,7 @@
         app:cardCornerRadius="10dp"
         android:layout_margin="30dp"
         android:backgroundTint="?attr/colorTertiary"
-        android:visibility="visible">
+        android:visibility="invisible">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -128,7 +128,7 @@
         android:layout_height="0dp"
         app:layout_constraintTop_toBottomOf="@id/recuadro_saldo"
         app:layout_constraintBottom_toTopOf="@id/anadir_gasto_boton"
-        android:background="@color/white">
+        android:background="?attr/colorSurface">
     </androidx.recyclerview.widget.RecyclerView>
 
     <Button
