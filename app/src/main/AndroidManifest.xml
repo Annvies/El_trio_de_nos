@@ -22,9 +22,6 @@
             android:name=".AyudaView"
             android:exported="false" />
         <activity
-            android:name=".AjustesView"
-            android:exported="false" />
-        <activity
             android:name=".PantallaMenu"
             android:exported="false" />
         <activity
@@ -32,7 +29,13 @@
             android:exported="false" />
         <activity
             android:name=".PantallaLogIn"
-            android:exported="false" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".PantallaNuevoIngreso"
             android:exported="false" />
@@ -41,13 +44,7 @@
             android:exported="false" />
         <activity
             android:name=".PantallaPrincipal"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false"/>
         <activity
             android:name=".PantallaCarga"
             android:exported="false" />

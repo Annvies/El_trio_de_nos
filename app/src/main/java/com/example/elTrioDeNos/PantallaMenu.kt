@@ -1,5 +1,6 @@
 package com.example.elTrioDeNos
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -7,27 +8,36 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.elTrioDeNos.databinding.ActivityPantallaMenuBinding
 
 class PantallaMenu : AppCompatActivity() {
+
+    private lateinit var binding: ActivityPantallaMenuBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_pantalla_menu)
+
+        binding = ActivityPantallaMenuBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
 
         }
-        val ayudaButton: Button = findViewById(R.id.ayuda)
+        val contexto: Context = this
 
-        ayudaButton.setOnClickListener {
-            val intentAyuda = Intent(this, ayudaButton::class.java)
-
-
+        binding.btnAyuda.setOnClickListener {
+            val intentAyuda = Intent(contexto, AyudaView::class.java)
             startActivity(intentAyuda)
         }
 
-        // ... Aquí puedes agregar el código para el botón de Perfil ...
+        binding.btnPerfil.setOnClickListener {
+            val intentUser: Intent = Intent(contexto, PantallaUsuarios::class.java)
+            startActivity(intentUser)
+        }
+
     }
 }

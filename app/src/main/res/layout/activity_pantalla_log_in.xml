@@ -65,12 +65,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+
     <Button
-        android:id="@+id/sign_in_button"
+        android:id="@+id/btn_crearCuenta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:text="Sign in"
+        android:layout_marginTop="10dp"
+        android:text="Crear Cuenta"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:backgroundTint="#743B42"
+        app:layout_constraintTop_toBottomOf="@id/email_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_logIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:text="Log In"
         android:textColor="?attr/colorOnPrimary"
         android:textSize="18sp"
         android:backgroundTint="?attr/colorPrimary"

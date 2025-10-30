@@ -7,7 +7,12 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.elTrioDeNos.dataClases.Gasto
 import com.example.elTrioDeNos.databinding.ActivityPantallaPrincipalBinding
+import java.util.Date
+import kotlin.collections.listOf
 
 class PantallaPrincipal : AppCompatActivity() {
 
@@ -26,12 +31,41 @@ class PantallaPrincipal : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
         val contexto: Context = this
+
+        /////////////////bindeo con el recycleView////////////////////////////
+
+        val nuevaLista =mutableListOf<Gasto>()
+        nuevaLista.add(Gasto(2.50, fecha = Date(),"pilfrut"))
+
+        nuevaLista.add(Gasto(1.00, Date(), "grosso"))
+
+        //adapter.addDataCards(nuevaLista) // TO DO
+
+        binding.recyclePantallaPrincipal.layoutManager = GridLayoutManager(contexto,2)
+
+        //binding.recyclePantallaPrincipal.adapter = adapter //TO DO
+
+        ////////////////////////////////////////////////////////////////////////
 
         binding.anadirIngresoBoton.setOnClickListener {
             val cambioAIngresos: Intent = Intent(contexto, PantallaIngresos::class.java)
             startActivity(cambioAIngresos)
+        }
+
+        binding.anadirGastoBoton.setOnClickListener {
+            val cambioPantallaGastosCat: Intent = Intent(contexto, PantallaGastosCtegoria::class.java)
+            startActivity(cambioPantallaGastosCat)
+        }
+
+        binding.menuBoton.setOnClickListener {
+            val cambioPantallaMenu: Intent = Intent(contexto, PantallaMenu::class.java)
+            startActivity(cambioPantallaMenu)
+        }
+
+        binding.btnBuscar.setOnClickListener {
+            val cambioCalendario: Intent = Intent(contexto, PantallaCalendario::class.java)
+            startActivity(cambioCalendario)
         }
 
 

@@ -47,7 +47,7 @@
 
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/ayuda"
+        android:id="@+id/btn_ayuda"
         android:layout_width="174dp"
         android:layout_height="122dp"
         android:backgroundTint="?attr/colorSecondary"
