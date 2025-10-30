@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="primary">#652831</color>
+    <color name="on_primary">#FFF4F6</color>
+    <color name="primary_container">#753B43</color>
+    <color name="on_primary_container">#FFF4F6</color>
+    <color name="primaryVariant">#B9898E</color>
 
-    <color name="primary">#4B1920</color>
-    <color name="on_primary">#FFFFFFFF</color>
-    <color name="primary_container">#743B42</color>
-    <color name="on_primary_container">#FFFFFFFF</color>
-    <color name="primaryVariant">#B59A9E</color>
+    <color name="secondary">#B9898E</color>
+    <color name="on_secondary">#33090F</color>
+    <color name="secondary_container">#4B1920</color>
+    <color name="on_secondary_container">#FFF4F6</color>
 
-    <color name="secondary">#753B43</color>
-    <color name="on_secondary">#FFFFFFFF</color>
-    <color name="secondary_container">#B9898E</color>
-    <color name="on_secondary_container">#33090F</color>
+    <color name="tertiary">#743B42</color>
+    <color name="on_tertiary">#FFF4F6</color>
+    <color name="tertiary_container">#5A2C33</color>
+    <color name="on_tertiary_container">#F5C5CC</color>
 
-    <color name="tertiary">#F5C5CC</color>
-    <color name="on_tertiary">#33090F</color>
-    <color name="tertiary_container">#FBE1E6</color>
-    <color name="on_tertiary_container">#33090F</color>
+    <color name="outline">#906B73</color>
+    <color name="outline_variant">#B59A9E</color>
 
-    <color name="outline">#896C70</color>
-    <color name="outline_variant">#906B73</color>
+    <color name="error">#B9898E</color>
+    <color name="on_error">#FFF4F6</color>
 
-    <color name="error">#B59A9E</color>
-    <color name="on_error">#FFFFFFFF</color>
+    <color name="surface">#33090F</color>
+    <color name="on_surface">#FFF4F6</color>
+    <color name="surface_variant">#2F0A10</color>
+    <color name="on_surface_variant">#FBE1E6</color>
 
-    <color name="inverse_surface">#33090F</color>
-    <color name="inverse_on_surface">#FFF4F6</color>
+    <color name="background">#2A050A</color>
+    <color name="on_background">#FBE1E6</color>
 
-    <color name="surface">#1F1A1C</color>
-    <color name="on_surface">#F5F5F5</color>
-    <color name="surface_variant">#C9A9AE</color>
-    <color name="on_surface_variant">#33090F</color>
-    <color name="background">#1F1A1C</color>
-    <color name="on_background">#F5F5F5</color>
+    <color name="inverse_surface">#FFF4F6</color>
+    <color name="inverse_on_surface">#33090F</color>
 </resources>

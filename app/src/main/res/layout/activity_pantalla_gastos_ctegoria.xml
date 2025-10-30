@@ -283,7 +283,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Escoge la categoria a la que pertenece tu gasto"
-        android:background="#FFF4F6"
+        android:background="?attr/colorSurface"
         android:textStyle="bold"
         android:textColor="?attr/colorSecondary"
         android:textSize="19sp"
