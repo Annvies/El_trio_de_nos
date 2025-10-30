@@ -25,11 +25,10 @@ class PantallaCalendario : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val contexto: Context = this
 
-        binding.buttonSetDate.setOnClickListener {
-            val cambioPantallaCategoria: Intent = Intent(contexto, PantallaCategoria::class.java)
-            startActivity(cambioPantallaCategoria)
+
+
+
+
         }
     }
-}

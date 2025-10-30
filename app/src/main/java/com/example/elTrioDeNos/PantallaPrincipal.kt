@@ -39,5 +39,9 @@ class PantallaPrincipal : AppCompatActivity() {
             val cambioACalendario: Intent = Intent(contexto, PantallaCalendario::class.java)
             startActivity(cambioACalendario)
         }
+        binding.menuicono.setOnClickListener {
+            val cambioAMenu: Intent = Intent(contexto, PantallaMenu::class.java)
+            startActivity(cambioAMenu)
+        }
     }
 }

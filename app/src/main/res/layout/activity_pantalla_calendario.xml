@@ -32,7 +32,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSetDate"
+        app:layout_constraintBottom_toTopOf="@+id/btn_seleccionarFecha"
         android:datePickerMode="calendar"
         android:calendarViewShown="true"
         android:spinnersShown="false"
@@ -41,7 +41,7 @@
 
 
     <Button
-        android:id="@+id/button_Set_Date"
+        android:id="@+id/btn_seleccionarFecha"
         android:layout_width="237dp"
         android:layout_height="70dp"
         android:layout_marginBottom="30dp"
