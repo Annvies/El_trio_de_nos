@@ -5,18 +5,18 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF4F6"
+    android:background="?attr/colorSurface"
     tools:context=".PantallaGastosCtegoria">
 
     <TextView
         android:id="@+id/text_selectCategoria"
         android:layout_width="match_parent"
         android:layout_height="166dp"
-        android:background="#4B1920"
+        android:background="?attr/colorPrimary"
         android:gravity="center"
         android:text="Agregar gasto"
         android:textStyle="bold"
-        android:textColor="#FFF4F6"
+        android:textColor="?attr/colorOnPrimary"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,14 +27,14 @@
         android:layout_width="75dp"
         android:layout_height="75dp"
 
-        android:background="@drawable/button"
+        android:background="@drawable/boton_categoria"
         android:backgroundTint="@null"
         app:backgroundTint="@null"
         android:paddingTop="0dp"
 
         android:text="Deudas"
         android:textSize="14sp"
-        android:textColor="#33090F"
+        android:textColor="?attr/colorOnTertiaryContainer"
         android:includeFontPadding="false"
         android:maxLines="1"
         android:padding="3dp"
@@ -50,7 +50,7 @@
         android:layout_width="75dp"
         android:layout_height="75dp"
 
-        android:background="@drawable/button"
+        android:background="@drawable/boton_categoria"
         android:backgroundTint="@null"
         android:drawableTop="@drawable/ic_cat_food"
         android:drawablePadding="16dp"
@@ -62,7 +62,7 @@
         android:text="Comida"
         android:textAllCaps="false"
 
-        android:textColor="#33090F"
+        android:textColor="?attr/colorOnTertiaryContainer"
         android:textSize="14sp"
         app:backgroundTint="@null" />
 
@@ -71,7 +71,7 @@
         android:layout_width="75dp"
         android:layout_height="75dp"
 
-        android:background="@drawable/button"
+        android:background="@drawable/boton_categoria"
         android:backgroundTint="@null"
         android:drawableTop="@drawable/ic_cat_entertainment"
         android:drawablePadding="16dp"
@@ -83,7 +83,7 @@
         android:text="Entrenimiento"
         android:textAllCaps="false"
 
-        android:textColor="#33090F"
+        android:textColor="?attr/colorOnTertiaryContainer"
         android:textSize="9sp"
         app:backgroundTint="@null"/>
 
@@ -92,7 +92,7 @@
         android:layout_width="75dp"
         android:layout_height="75dp"
 
-        android:background="@drawable/button"
+        android:background="@drawable/boton_categoria"
         android:backgroundTint="@null"
         android:drawableTop="@drawable/ic_cat_transport"
         android:drawablePadding="16dp"
@@ -104,7 +104,7 @@
         android:text="Transporte"
         android:textAllCaps="false"
 
-        android:textColor="#33090F"
+        android:textColor="?attr/colorOnTertiaryContainer"
         android:textSize="13sp"
         app:backgroundTint="@null" />
 
@@ -113,7 +113,7 @@
         android:layout_width="75dp"
         android:layout_height="75dp"
 
-        android:background="@drawable/button"
+        android:background="@drawable/boton_categoria"
         android:backgroundTint="@null"
         android:drawableTop="@drawable/ic_cat_shop"
         android:drawablePadding="16dp"
@@ -125,7 +125,7 @@
         android:text="Mercado"
         android:textAllCaps="false"
 
-        android:textColor="#33090F"
+        android:textColor="?attr/colorOnTertiaryContainer"
         android:textSize="14sp"
         app:backgroundTint="@null" />
 
@@ -134,7 +134,7 @@
         android:layout_width="75dp"
         android:layout_height="75dp"
 
-        android:background="@drawable/button"
+        android:background="@drawable/boton_categoria"
         android:backgroundTint="@null"
         android:drawableTop="@drawable/ic_cat_settings"
         android:drawablePadding="16dp"
@@ -146,7 +146,7 @@
         android:text="Mantenimiento"
         android:textAllCaps="false"
 
-        android:textColor="#33090F"
+        android:textColor="?attr/colorOnTertiaryContainer"
         android:textSize="10sp"
         app:backgroundTint="@null" />
 
@@ -155,7 +155,7 @@
         android:layout_width="75dp"
         android:layout_height="75dp"
 
-        android:background="@drawable/button"
+        android:background="@drawable/boton_categoria"
         android:backgroundTint="@null"
         android:drawableTop="@drawable/ic_cat_clothes"
         android:drawablePadding="16dp"
@@ -167,7 +167,7 @@
         android:text="Ropa"
         android:textAllCaps="false"
 
-        android:textColor="#33090F"
+        android:textColor="?attr/colorOnTertiaryContainer"
         android:textSize="14sp"
         app:backgroundTint="@null" />
 
@@ -176,7 +176,7 @@
         android:layout_width="75dp"
         android:layout_height="75dp"
 
-        android:background="@drawable/button"
+        android:background="@drawable/boton_categoria"
         android:backgroundTint="@null"
         android:drawableTop="@drawable/ic_cat_education"
         android:drawablePadding="16dp"
@@ -188,7 +188,7 @@
         android:text="Estudios"
         android:textAllCaps="false"
 
-        android:textColor="#33090F"
+        android:textColor="?attr/colorOnTertiaryContainer"
         android:textSize="14sp"
         app:backgroundTint="@null"/>
 
@@ -197,7 +197,7 @@
         android:layout_width="75dp"
         android:layout_height="75dp"
 
-        android:background="@drawable/button"
+        android:background="@drawable/boton_categoria"
         android:backgroundTint="@null"
         android:drawableTop="@drawable/ic_cat_makeup"
         android:drawablePadding="16dp"
@@ -209,7 +209,7 @@
         android:text="Make up"
         android:textAllCaps="false"
 
-        android:textColor="#33090F"
+        android:textColor="?attr/colorOnTertiaryContainer"
         android:textSize="14sp"
         app:backgroundTint="@null"/>
 
@@ -218,7 +218,7 @@
         android:layout_width="75dp"
         android:layout_height="75dp"
 
-        android:background="@drawable/button"
+        android:background="@drawable/boton_categoria"
         android:backgroundTint="@null"
         android:drawableTop="@drawable/ic_cat_health"
         android:drawablePadding="16dp"
@@ -230,7 +230,7 @@
         android:text="Salud"
         android:textAllCaps="false"
 
-        android:textColor="#33090F"
+        android:textColor="?attr/colorOnTertiaryContainer"
         android:textSize="14sp"
         app:backgroundTint="@null" />
 
@@ -239,7 +239,7 @@
         android:layout_width="75dp"
         android:layout_height="75dp"
 
-        android:background="@drawable/button"
+        android:background="@drawable/boton_categoria"
         android:backgroundTint="@null"
         android:drawableTop="@drawable/ic_cat_gift"
         android:drawablePadding="16dp"
@@ -251,7 +251,7 @@
         android:text="Regalos"
         android:textAllCaps="false"
 
-        android:textColor="#33090F"
+        android:textColor="?attr/colorOnTertiaryContainer"
         android:textSize="14sp"
         app:backgroundTint="@null" />
 
@@ -285,7 +285,7 @@
         android:text="Escoge la categoria a la que pertenece tu gasto"
         android:background="#FFF4F6"
         android:textStyle="bold"
-        android:textColor="#33090F"
+        android:textColor="?attr/colorSecondary"
         android:textSize="19sp"
         android:gravity="center"
         android:paddingTop="30dp"

@@ -6,18 +6,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PantallaCategoria"
-    android:background="#FFF4F6">
+    android:background="?attr/colorSurface">
 
 
     <TextView
         android:id="@+id/text_selectCategoria"
         android:layout_width="match_parent"
         android:layout_height="166dp"
-        android:background="#4B1920"
+        android:background="?colorPrimary"
         android:gravity="center"
         android:text="Seleccione una categoría"
         android:textStyle="bold"
-        android:textColor="#FFF4F6"
+        android:textColor="?attr/colorOnPrimary"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -39,7 +39,7 @@
 
         android:text="General"
         android:textSize="14sp"
-        android:textColor="#33090F"
+        android:textColor="?attr/colorOnTertiary"
         android:includeFontPadding="false"
         android:maxLines="1"
         android:padding="3dp"
@@ -73,7 +73,7 @@
         android:textAllCaps="false"
 
 
-        android:textColor="#33090F"
+        android:textColor="?attr/colorOnTertiary"
         android:textSize="14sp"
         app:backgroundTint="@null" />
 
@@ -98,7 +98,7 @@
         android:textAllCaps="false"
 
 
-        android:textColor="#33090F"
+        android:textColor="?attr/colorOnTertiary"
         android:textSize="9sp"
         app:backgroundTint="@null"/>
 
@@ -123,7 +123,7 @@
         android:textAllCaps="false"
 
 
-        android:textColor="#33090F"
+        android:textColor="?attr/colorOnTertiary"
         android:textSize="13sp"
         app:backgroundTint="@null" />
 
@@ -148,7 +148,7 @@
         android:textAllCaps="false"
 
 
-        android:textColor="#33090F"
+        android:textColor="?attr/colorOnTertiary"
         android:textSize="14sp"
         app:backgroundTint="@null" />
 
@@ -173,7 +173,7 @@
         android:textAllCaps="false"
 
 
-        android:textColor="#33090F"
+        android:textColor="?colorOnTertiary"
         android:textSize="10sp"
         app:backgroundTint="@null" />
 
@@ -198,7 +198,7 @@
         android:textAllCaps="false"
 
 
-        android:textColor="#33090F"
+        android:textColor="?colorOnTertiary"
         android:textSize="14sp"
         app:backgroundTint="@null" />
 
@@ -223,7 +223,7 @@
         android:textAllCaps="false"
 
 
-        android:textColor="#33090F"
+        android:textColor="?attr/colorOnTertiary"
         android:textSize="14sp"
         app:backgroundTint="@null"/>
 
@@ -248,7 +248,7 @@
         android:textAllCaps="false"
 
 
-        android:textColor="#33090F"
+        android:textColor="?attr/colorOnTertiary"
         android:textSize="14sp"
         app:backgroundTint="@null"/>
 
@@ -273,7 +273,7 @@
         android:textAllCaps="false"
 
 
-        android:textColor="#33090F"
+        android:textColor="?colorOnTertiary"
         android:textSize="14sp"
         app:backgroundTint="@null" />
 
@@ -298,7 +298,7 @@
         android:textAllCaps="false"
 
 
-        android:textColor="#33090F"
+        android:textColor="?attr/colorOnTertiary"
         android:textSize="14sp"
         app:backgroundTint="@null" />
 
@@ -323,7 +323,7 @@
         android:textAllCaps="false"
 
 
-        android:textColor="#33090F"
+        android:textColor="?attr/colorOnTertiary"
         android:textSize="14sp"
         app:backgroundTint="@null"/>
 
@@ -361,7 +361,7 @@
         android:layout_height="wrap_content"
         android:text="Escoge la categoría que desea                      buscar"
         android:textStyle="bold"
-        android:textColor="@color/guindoOscuro"
+        android:textColor="?attr/colorSecondary"
         android:textSize="19sp"
         android:gravity="center"
         android:paddingTop="30dp"

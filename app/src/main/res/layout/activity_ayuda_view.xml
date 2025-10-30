@@ -5,18 +5,18 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF4F6"
+    android:background="?attr/colorSurface"
     tools:context=".AyudaView">
 
     <TextView
         android:id="@+id/titulo"
         android:layout_width="match_parent"
         android:layout_height="166dp"
-        android:background="#4B1920"
+        android:background="?attr/colorPrimary"
         android:gravity="center"
         android:text="Ayuda"
         android:textStyle="bold"
-        android:textColor="#FFF4F6"
+        android:textColor="?attr/colorOnPrimary"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,7 +30,7 @@
         android:layout_marginStart="120dp"
         android:layout_marginTop="64dp"
         android:foregroundGravity="center"
-        android:src="@drawable/ayuda_icono"
+        android:src="@drawable/ic_menu_help"
         app:layout_constraintStart_toStartOf="@+id/titulo"
         app:layout_constraintTop_toTopOf="parent" />
 

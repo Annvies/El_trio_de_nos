@@ -5,14 +5,15 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PantallaPrincipal">
+    tools:context=".PantallaPrincipal"
+    android:background="?attr/colorSurface">
 
     <View
         android:id="@+id/marcoSuperior"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="#4b1a20"/>
+        android:background="?attr/colorPrimary"/>
 
     <ImageView
         android:layout_width="150dp"
@@ -29,7 +30,7 @@
         app:layout_constraintStart_toStartOf="@id/marcoSuperior"
         app:layout_constraintTop_toTopOf="@id/marcoSuperior"
         android:layout_margin="40dp"
-        android:src="@drawable/lupaicono">
+        android:src="@drawable/ic_pp_magnifying_glass">
     </ImageView>
 
     <ImageView
@@ -38,13 +39,13 @@
         app:layout_constraintEnd_toEndOf="@id/marcoSuperior"
         app:layout_constraintTop_toTopOf="@id/marcoSuperior"
         android:layout_margin="40dp"
-        android:src="@drawable/menuicono">
+        android:src="@drawable/ic_pp_menu">
     </ImageView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/recuadro_saldo"
-        android:layout_width="300dp"
-        android:layout_height="110dp"
+        android:layout_width="267dp"
+        android:layout_height="114dp"
         app:layout_constraintTop_toBottomOf="@id/marcoSuperior"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,34 +55,36 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#c9a9ae">
+            android:background="?attr/colorSecondaryContainer">
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
                 android:text="Saldo Disponible:"
-                android:textSize="20sp"
+                android:textColor="?attr/colorOnSecondaryContainer"
+                android:textStyle="bold"
+                android:textSize="21sp"
                 android:layout_margin="10dp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="280dp"
+        android:layout_width="237dp"
         android:layout_height="55dp"
         app:layout_constraintTop_toTopOf="@id/recuadro_saldo"
         app:layout_constraintEnd_toEndOf="@id/recuadro_saldo"
         app:layout_constraintStart_toStartOf="@id/recuadro_saldo"
         android:layout_marginTop="40dp"
         app:cardCornerRadius="30dp"
-        android:backgroundTint="#743b42">
+        android:backgroundTint="?attr/colorTertiaryContainer">
 
         <ImageView
             android:id="@+id/anadir_ingreso_boton"
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:layout_marginStart="210dp"
+            android:layout_marginStart="185dp"
             android:layout_marginTop="5dp"
-            android:src="@drawable/anadiricono">
+            android:src="@drawable/ic_pp_plus">
         </ImageView>
 
         <TextView
@@ -89,8 +92,8 @@
             android:layout_height="35dp"
             android:layout_margin="10dp"
             android:text="$ 3402887340"
-            android:textSize="25sp"
-            android:textColor="#c9a9ae">
+            android:textSize="24sp"
+            android:textColor="?attr/colorOnTertiaryContainer">
         </TextView>
     </androidx.cardview.widget.CardView>
 
@@ -100,7 +103,7 @@
         app:layout_constraintTop_toBottomOf="@id/recuadro_saldo"
         app:cardCornerRadius="10dp"
         android:layout_margin="30dp"
-        android:backgroundTint="#F5C5CC"
+        android:backgroundTint="?attr/colorTertiary"
         android:visibility="visible">
         <LinearLayout
             android:layout_width="match_parent"
@@ -111,7 +114,7 @@
                 android:gravity="center"
                 android:text="Ingresa tu primer gasto para verlo"
                 android:textSize="18sp"
-                android:textColor="#4B1920"
+                android:textColor="?attr/colorOnTertiary"
                 android:textStyle="bold">
             </TextView>
         </LinearLayout>
@@ -119,12 +122,13 @@
 
     <Button
         android:id="@+id/anadir_gasto_boton"
-        android:layout_width="300dp"
+        android:layout_width="250dp"
         android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:backgroundTint="#4b1a20"
+        android:backgroundTint="?attr/colorPrimary"
+        android:textColor="?attr/colorOnPrimary"
         android:text="Añadir gasto"
         android:textSize="30sp"
         android:gravity="center"

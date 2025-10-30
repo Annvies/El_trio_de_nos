@@ -3,7 +3,7 @@
 
 
     <style name="MyDatePickerStyle" parent="@android:style/Widget.Material.DatePicker">
-        <item name="android:headerBackground">@color/rosa</item>
+        <item name="android:headerBackground">?attr/colorTertiary</item>
         <item name="android:calendarViewStyle">@style/MyCalendarViewStyle</item>
     </style>
 
@@ -11,20 +11,20 @@
     <style name="MyCalendarViewStyle" parent="@android:style/Widget.Material.CalendarView">
         <item name="android:weekDayTextAppearance">@style/CalWeekdayText</item>
         <item name="android:dateTextAppearance">@style/CalDateText</item>
-        <item name="android:focusedMonthDateColor">@color/guindo</item>
-        <item name="android:unfocusedMonthDateColor">@color/black</item>
-        <item name="android:selectedWeekBackgroundColor">@color/guindo</item>
+        <item name="android:focusedMonthDateColor">?attr/colorSecondary</item>
+        <item name="android:unfocusedMonthDateColor">?attr/colorOnSecondaryContainer</item>
+        <item name="android:selectedWeekBackgroundColor">?attr/colorSecondary</item>
         <item name="android:weekSeparatorLineColor">@android:color/transparent</item>
     </style>
 
 
     <style name="CalWeekdayText" parent="@android:style/TextAppearance.Material.Body2">
-        <item name="android:textColor">@color/guindo</item>
+        <item name="android:textColor">?attr/colorSecondary</item>
     </style>
 
 
     <style name="CalDateText" parent="@android:style/TextAppearance.Material.Body1">
-        <item name="android:textColor">@color/guindo</item>
+        <item name="android:textColor">?attr/colorOutline</item>
     </style>
 
 
@@ -33,13 +33,13 @@
         <item name="android:calendarViewStyle">@style/MyCalendarViewStyle</item>
 
 
-        <item name="colorAccent">@color/guindo</item>
-        <item name="android:colorAccent">@color/guindo</item>
-        <item name="colorControlActivated">@color/rosa</item>
-        <item name="colorControlHighlight">@color/guindo</item>
+        <item name="colorAccent">?attr/colorOnSurface</item>
+        <item name="android:colorAccent">?attr/colorOnSurface</item>
+        <item name="colorControlActivated">?attr/colorTertiary</item>
+        <item name="colorControlHighlight">?attr/colorOnSurface</item>
 
 
-        <item name="android:textColorPrimary">@color/guindoOscuro</item>
+        <item name="android:textColorPrimary">?attr/colorOnTertiary</item>
     </style>
 
     <style name="ThemeOverlay.App"/>

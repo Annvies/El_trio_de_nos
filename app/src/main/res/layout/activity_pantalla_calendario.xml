@@ -6,17 +6,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PantallaCalendario"
-    android:background="#FFF4F6">
+    android:background="?attr/colorSurface">
 
     <TextView
         android:id="@+id/text_selectFecha"
         android:layout_width="match_parent"
         android:layout_height="166dp"
-        android:background="#4B1920"
+        android:background="?attr/colorPrimary"
         android:gravity="center"
         android:text="Seleccione una fecha"
         android:textStyle="bold"
-        android:textColor="#FFF4F6"
+        android:textColor="?attr/colorOnPrimary"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -45,9 +45,9 @@
         android:layout_width="237dp"
         android:layout_height="70dp"
         android:layout_marginBottom="30dp"
-        android:backgroundTint="@color/guindo"
+        android:backgroundTint="?attr/colorPrimary"
         android:text="Seleccionar Fecha"
-        android:textColor="@color/white"
+        android:textColor="?attr/colorOnPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
