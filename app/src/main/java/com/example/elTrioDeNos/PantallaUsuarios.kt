@@ -36,8 +36,8 @@ class PantallaUsuarios : AppCompatActivity() {
 
         auth = Firebase.auth
 
-        val user = FirebaseAuth.getInstance().currentUser
-        val correoUser = user?.email
+        val userPalCorreo = FirebaseAuth.getInstance().currentUser
+        val correoUser = userPalCorreo?.email
 
         binding.userMail.setText(correoUser)
 
@@ -53,7 +53,7 @@ class PantallaUsuarios : AppCompatActivity() {
                 Toast.makeText(this, "La contraseña debe tener al menos 6 caracteres", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
-
+                val user = auth.currentUser
                 user?.updatePassword(nuevaPass)
                     ?.addOnCompleteListener { task ->
                         if(task.isSuccessful){
@@ -71,7 +71,10 @@ class PantallaUsuarios : AppCompatActivity() {
         binding.btnCerrarSesion.setOnClickListener {
             auth.signOut()
             val cambioLogIn: Intent = Intent(contexto, PantallaLogIn::class.java)
+            cambioLogIn.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+
             startActivity(cambioLogIn)
+            finish()
         }
     }
 }
