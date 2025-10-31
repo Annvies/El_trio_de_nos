@@ -51,12 +51,11 @@ class PantallaLogIn : AppCompatActivity() {
                     Toast.LENGTH_SHORT,
                 ).show()
             }
-
         }
+
         binding.btnLogIn.setOnClickListener {
             val correo = binding.emailEdittext.text.toString()
             val pass = binding.passwordEdittext.text.toString()
-
             if ((!correo.equals("")) && (!pass.equals(""))){
                 loginValidation(correo, pass)
             } else {
@@ -74,7 +73,8 @@ class PantallaLogIn : AppCompatActivity() {
         super.onStart()
         val currentUser = auth.currentUser
         if (currentUser != null) {
-            cambioDePantalla()
+            val cambioPantallaPrincipal: Intent = Intent(contexto, PantallaPrincipal::class.java)
+            startActivity(cambioPantallaPrincipal)
         }
     }
 
@@ -83,12 +83,14 @@ class PantallaLogIn : AppCompatActivity() {
         correo: String,
         pass: String
     ){
-        //auth.pass
-        //auth.signOut()
         auth.createUserWithEmailAndPassword(correo, pass)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-                    // Almacenar datos
+                    Toast.makeText(
+                        this,
+                        "Cuenta creada correctamente",
+                        Toast.LENGTH_SHORT,
+                    ).show()
                 } else {
                     Toast.makeText(
                         this,
@@ -106,7 +108,10 @@ class PantallaLogIn : AppCompatActivity() {
         auth.signInWithEmailAndPassword(correo, pass)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful){
-                    cambioDePantalla()
+                    val cambioPantallaPrincipal: Intent = Intent(contexto, PantallaPrincipal::class.java)
+                    cambioPantallaPrincipal.putExtra("password_length",pass.length)
+                    startActivity(cambioPantallaPrincipal)
+                    finish()
                 } else {
                     Toast.makeText(
                         this,
@@ -116,11 +121,4 @@ class PantallaLogIn : AppCompatActivity() {
                 }
             }
     }
-
-    fun cambioDePantalla(){
-        val cambioPantallaPrincipal: Intent = Intent(contexto, PantallaPrincipal::class.java)
-        startActivity(cambioPantallaPrincipal)
-    }
-
-
 }

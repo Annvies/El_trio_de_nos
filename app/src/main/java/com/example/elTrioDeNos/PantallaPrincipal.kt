@@ -34,6 +34,8 @@ class PantallaPrincipal : AppCompatActivity() {
         }
         val contexto: Context = this
 
+        val longitudPass = intent.getIntExtra("password_length", 0)
+
         /////////////////bindeo con el recycleView////////////////////////////
 
         val nuevaLista =mutableListOf<Gasto>()
@@ -63,6 +65,7 @@ class PantallaPrincipal : AppCompatActivity() {
 
         binding.menuBoton.setOnClickListener {
             val cambioPantallaMenu: Intent = Intent(contexto, PantallaMenu::class.java)
+            cambioPantallaMenu.putExtra("pasword_lenght", longitudPass)
             startActivity(cambioPantallaMenu)
         }
 
