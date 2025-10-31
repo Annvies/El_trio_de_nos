@@ -8,7 +8,6 @@
     tools:context=".PantallaUsuarios"
     android:background="?attr/colorSurface">
 
-
     <View
         android:id="@+id/view_cuadradoGuindoUsuario"
         android:layout_width="match_parent"
@@ -17,7 +16,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
-
 
     <ImageView
         android:id="@+id/svg_user"
@@ -29,6 +27,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:paddingTop="20dp"
         />
+
     <TextView
         android:id="@+id/text_titulo"
         android:layout_width="wrap_content"
@@ -73,6 +72,35 @@
         />
 
     <TextView
+        android:id="@+id/nameContraseñaFijo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Contraseña: "
+        android:textStyle="bold"
+        android:textColor="?attr/colorSecondary"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userMail"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/nameContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="********"
+        android:textColor="?attr/colorOnTertiary"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameContraseñaFijo"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
         android:id="@+id/preguntaContraseña"
         android:layout_width="310dp"
         android:layout_height="32dp"
@@ -82,35 +110,10 @@
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/userMail"
+        app:layout_constraintTop_toBottomOf="@id/nameContraseña"
         android:layout_marginTop="5dp" />
 
-    <TextView
-        android:id="@+id/ingresePassActual"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Ingresa tu actual contraseña"
-        android:textStyle="bold"
-        android:textSize="18sp"
-        android:textColor="?attr/colorSecondary"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/preguntaContraseña"
-        android:layout_marginTop="15dp"/>
 
-    <EditText
-        android:id="@+id/editTextActualPass"
-        android:layout_width="266dp"
-        android:layout_height="45dp"
-        android:hint="minimo 8 carácteres"
-        android:background="@drawable/user_edit_text_rounded"
-        android:paddingLeft="15dp"
-        android:textColor="#33090F"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ingresePassActual"
-        android:layout_marginTop="15dp"/>
 
     <TextView
         android:id="@+id/textIngresePassnueva"
@@ -123,14 +126,14 @@
         android:textColor="?attr/colorSecondary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextActualPass"
+        app:layout_constraintTop_toBottomOf="@id/preguntaContraseña"
         android:layout_marginTop="15dp"/>
 
     <EditText
         android:id="@+id/editTextNuevaPass"
         android:layout_width="266dp"
         android:layout_height="45dp"
-        android:hint="minimo 8 carácteres"
+        android:hint="minimo 6 carácteres"
         android:background="@drawable/user_edit_text_rounded"
         android:paddingLeft="15dp"
         android:textColor="?attr/colorOnSurface"
