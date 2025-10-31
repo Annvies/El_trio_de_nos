@@ -19,7 +19,7 @@
             android:exported="false" >
         </activity>
         <activity
-            android:name=".AyudaView"
+            android:name=".PantallaAyudaView"
             android:exported="false" />
         <activity
             android:name=".PantallaMenu"
@@ -40,6 +40,9 @@
             android:name=".PantallaNuevoIngreso"
             android:exported="false" />
         <activity
+            android:name=".PantallaCategoria"
+            android:exported="false"/>
+        <activity
             android:name=".PantallaIngresos"
             android:exported="false" />
         <activity
@@ -53,9 +56,6 @@
             android:exported="false" />
         <activity
             android:name=".PantallaResultados"
-            android:exported="false" />
-        <activity
-            android:name=".PantallaCategoria"
             android:exported="false" />
         <activity
             android:name=".PantallaCalendario"

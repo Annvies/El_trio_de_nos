@@ -32,7 +32,7 @@ class PantallaMenu : AppCompatActivity() {
         val longitudPass = intent.getIntExtra("password_lenght", 0)
 
         binding.btnAyuda.setOnClickListener {
-            val intentAyuda = Intent(contexto, AyudaView::class.java)
+            val intentAyuda = Intent(contexto, PantallaAyudaView::class.java)
             startActivity(intentAyuda)
         }
 
