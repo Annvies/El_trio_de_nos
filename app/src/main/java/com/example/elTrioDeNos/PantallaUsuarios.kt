@@ -3,6 +3,7 @@ package com.example.elTrioDeNos
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -38,12 +39,32 @@ class PantallaUsuarios : AppCompatActivity() {
         val user = FirebaseAuth.getInstance().currentUser
         val correoUser = user?.email
 
-        val passActual = intent.getIntExtra("password_lenght", 0)
-        val passLenght = "*".repeat(passActual)
-
         binding.userMail.setText(correoUser)
 
         binding.btnGuardarContra.setOnClickListener {
+            val nuevaPass: String = binding.editTextNuevaPass.text.toString()
+
+            if(nuevaPass.isEmpty()){
+                Toast.makeText(this, "Ingresa una nueva contraseña", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            if(nuevaPass.length < 6){
+                Toast.makeText(this, "La contraseña debe tener al menos 6 caracteres", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+                user?.updatePassword(nuevaPass)
+                    ?.addOnCompleteListener { task ->
+                        if(task.isSuccessful){
+                            Toast.makeText(this, "Contraseña actualizada correctamente", Toast.LENGTH_SHORT).show()
+                            binding.editTextNuevaPass.text.clear()
+                        } else {
+                            Toast.makeText(this, "Error al actualizar la contraseña", Toast.LENGTH_SHORT).show()
+                        }
+                    } ?: run {
+                    Toast.makeText(this, "No hay usuario autenticado", Toast.LENGTH_SHORT).show()
+                }
 
         }
 
