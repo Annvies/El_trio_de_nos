@@ -45,7 +45,7 @@
                android:layout_height="wrap_content"
                android:text="Fecha: 16/04/28"
                android:textSize="15sp"
-               android:textColor="?attr/colorPrimaryVariant">
+               android:textColor="?attr/colorOnTertiary">
            </TextView>
 
            <TextView
@@ -54,10 +54,8 @@
                android:layout_height="wrap_content"
                android:text="Categoria: Entetenimiento"
                android:textSize="15sp"
-               android:textColor="?attr/colorPrimaryVariant">
+               android:textColor="?attr/colorOnTertiary">
            </TextView>
-
-
        </LinearLayout>
     </androidx.cardview.widget.CardView>
 
