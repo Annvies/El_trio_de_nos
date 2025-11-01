@@ -34,11 +34,11 @@ class PantallaIngresos : AppCompatActivity() {
         //////////////////bindeo con recycleView////////////////////////////////////
 
         val nuevaLista = mutableListOf<Ingreso>()
-        nuevaLista.add(Ingreso(400.0, "mesada", Date()))
+        nuevaLista.add(Ingreso(400.0, "mesada", Date().toString()))
 
-        nuevaLista.add(Ingreso(50.0, "deuda", Date()))
+        nuevaLista.add(Ingreso(50.0, "deuda", Date().toString()))
 
-        nuevaLista.add(Ingreso(2.50, "chamba", Date()))
+        nuevaLista.add(Ingreso(2.50, "chamba", Date().toString()))
 
         adapter.addDataCards(nuevaLista)
 
@@ -46,20 +46,34 @@ class PantallaIngresos : AppCompatActivity() {
 
         binding.recyclePantallaIngresos.adapter = adapter
 
-        /////////////////////////////////////////////////////////////////////////
+        mostrarSaldo()
+        cargarIngresos()
 
 
-
-
-
-
-
-
+        ///////////////////////////////////////////////////////////////////////
 
         binding.btnAnadirIngreso.setOnClickListener {
             val cambioNuevoIngreso: Intent = Intent(contexto, PantallaNuevoIngreso::class.java)
             startActivity(cambioNuevoIngreso)
         }
 
+    }
+
+    override fun onResume() {
+        super.onResume()
+        // Cada vez que se vuelva a esta pantalla, recargar datos
+        mostrarSaldo()
+        cargarIngresos()
+    }
+
+    private fun mostrarSaldo() {
+        val saldo = DatosManager.obtenerSaldo(this)
+        binding.saldoView.text = "${String.format("%.2f", saldo)}"
+    }
+
+    private fun cargarIngresos() {
+        val lista = DatosManager.obtenerIngresos(this)
+        adapter.addDataCards(lista)
+        binding.recyclePantallaIngresos.adapter?.notifyDataSetChanged()
     }
 }

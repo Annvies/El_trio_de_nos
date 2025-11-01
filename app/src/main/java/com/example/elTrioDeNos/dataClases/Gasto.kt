@@ -1,9 +1,10 @@
 package com.example.elTrioDeNos.dataClases
-
-import java.util.Date
-
+import kotlinx.serialization.Serializable
+//import java.util.Date
+@Serializable
 data class Gasto(
+    val categoria: String,
     val monto: Double,
-    val fecha: Date,
+    val fecha: String,
     val nota: String
 )

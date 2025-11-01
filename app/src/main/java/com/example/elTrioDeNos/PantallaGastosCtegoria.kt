@@ -31,46 +31,57 @@ class PantallaGastosCtegoria : AppCompatActivity() {
 
         binding.DeudasBoton.setOnClickListener {
             val cambioAgregarGasto: Intent = Intent(contexto, PantallaAgregarGasto::class.java)
+            cambioAgregarGasto.putExtra("categoria","deudas")
             startActivity(cambioAgregarGasto)
         }
         binding.comidaBoton.setOnClickListener {
             val cambioAgregarGasto: Intent = Intent(contexto, PantallaAgregarGasto::class.java)
+            cambioAgregarGasto.putExtra("categoria","comida")
             startActivity(cambioAgregarGasto)
         }
         binding.EntrenimientoBoton.setOnClickListener {
             val cambioAgregarGasto: Intent = Intent(contexto, PantallaAgregarGasto::class.java)
+            cambioAgregarGasto.putExtra("categoria","entretenimiento")
             startActivity(cambioAgregarGasto)
         }
         binding.TransporteBoton.setOnClickListener {
             val cambioAgregarGasto: Intent = Intent(contexto, PantallaAgregarGasto::class.java)
+            cambioAgregarGasto.putExtra("categoria","transporte")
             startActivity(cambioAgregarGasto)
         }
         binding.MercadoBoton.setOnClickListener {
             val cambioAgregarGasto: Intent = Intent(contexto, PantallaAgregarGasto::class.java)
+            cambioAgregarGasto.putExtra("categoria","mercado")
             startActivity(cambioAgregarGasto)
         }
         binding.mantenimientoBoton.setOnClickListener {
             val cambioAgregarGasto: Intent = Intent(contexto, PantallaAgregarGasto::class.java)
+            cambioAgregarGasto.putExtra("categoria","mantenimiento")
             startActivity(cambioAgregarGasto)
         }
         binding.ropaBoton.setOnClickListener {
             val cambioAgregarGasto: Intent = Intent(contexto, PantallaAgregarGasto::class.java)
+            cambioAgregarGasto.putExtra("categoria","ropa")
             startActivity(cambioAgregarGasto)
         }
         binding.estudiosBoton.setOnClickListener {
             val cambioAgregarGasto: Intent = Intent(contexto, PantallaAgregarGasto::class.java)
+            cambioAgregarGasto.putExtra("categoria","estudios")
             startActivity(cambioAgregarGasto)
         }
         binding.makeupBoton.setOnClickListener {
             val cambioAgregarGasto: Intent = Intent(contexto, PantallaAgregarGasto::class.java)
+            cambioAgregarGasto.putExtra("categoria","makeup")
             startActivity(cambioAgregarGasto)
         }
         binding.SaludBoton.setOnClickListener {
             val cambioAgregarGasto: Intent = Intent(contexto, PantallaAgregarGasto::class.java)
+            cambioAgregarGasto.putExtra("categoria","salud")
             startActivity(cambioAgregarGasto)
         }
         binding.RegalosBoton.setOnClickListener {
             val cambioAgregarGasto: Intent = Intent(contexto, PantallaAgregarGasto::class.java)
+            cambioAgregarGasto.putExtra("categoria","regalos")
             startActivity(cambioAgregarGasto)
         }
 
