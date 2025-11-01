@@ -28,30 +28,6 @@
         android:textStyle="bold">
     </TextView>
 
-    <Button
-        android:id="@+id/agregarIngreso"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/marcoSuperior"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:text="@string/agregar_ingreso"
-        android:textSize="16sp"
-        android:backgroundTint="?attr/colorPrimary"
-        android:textColor="?attr/colorOnPrimary">
-    </Button>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/agregarIngreso"
-        android:layout_margin="20dp"
-        android:hint="@string/nota_en_lo_que_se_gasto"
-        android:textColorHint="?attr/colorOnSurfaceVariant"
-        android:textColor="?attr/colorOnTertiary"
-        android:textSize="24sp">
-    </EditText>
 
     <TextView
         android:layout_width="match_parent"
