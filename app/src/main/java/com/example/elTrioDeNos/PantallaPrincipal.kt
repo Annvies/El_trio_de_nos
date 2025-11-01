@@ -42,14 +42,26 @@ class PantallaPrincipal : AppCompatActivity() {
 
         val longitudPass = intent.getIntExtra("password_length", 0)
 
+        /////////////////mostrar saldinho///////////////////////////////////////
+        mostrarSaldo()
+
+        binding.anadirIngresoBoton.setOnClickListener {
+            val cambioAIngresos: Intent = Intent(contexto, PantallaIngresos::class.java)
+            startActivity(cambioAIngresos)
+        }
+
+        ///////////////////gastos//////////////////////////////////////////////
+
+        cargarGastos()
+
         /////////////////bindeo con el recycleView////////////////////////////
 
         val nuevaLista =mutableListOf<Gasto>()
-        nuevaLista.add(Gasto(2.50, fecha = Date().toString(),"pilfrut"))
-
-        nuevaLista.add(Gasto(1.00, Date().toString(), "grosso"))
-
-        nuevaLista.add(Gasto(17.00, Date().toString(), "grosso"))
+//        nuevaLista.add(Gasto(2.50, fecha = Date().toString(),"pilfrut"))
+//
+//        nuevaLista.add(Gasto(1.00, Date().toString(), "grosso"))
+//
+//        nuevaLista.add(Gasto(17.00, Date().toString(), "grosso"))
 
         adapter.addDataCards(nuevaLista)
 
@@ -58,11 +70,6 @@ class PantallaPrincipal : AppCompatActivity() {
         binding.recyclePantallaPrincipal.adapter = adapter
 
         ////////////////////////////////////////////////////////////////////////
-
-        binding.anadirIngresoBoton.setOnClickListener {
-            val cambioAIngresos: Intent = Intent(contexto, PantallaIngresos::class.java)
-            startActivity(cambioAIngresos)
-        }
 
         binding.anadirGastoBoton.setOnClickListener {
             val cambioPantallaGastosCat: Intent = Intent(contexto, PantallaGastosCtegoria::class.java)
@@ -79,7 +86,22 @@ class PantallaPrincipal : AppCompatActivity() {
             val cambioCalendario: Intent = Intent(contexto, PantallaCalendario::class.java)
             startActivity(cambioCalendario)
         }
+    }
 
+    /////////////////mostrar saldinho///////////////////////////////////////
+    override fun onResume() {
+        super.onResume()
+        mostrarSaldo()
+        cargarGastos()
+    }
 
+    private fun mostrarSaldo() {
+        val saldo = DatosManager.obtenerSaldo(this)
+        binding.saldoTextView.text = "${String.format("%.2f", saldo)}"
+    }
+
+    private fun cargarGastos() {
+        val lista = DatosManager.obtenerGastos(this)
+        adapter.addDataCards(lista)
     }
 }

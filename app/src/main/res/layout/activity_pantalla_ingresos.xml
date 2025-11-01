@@ -16,16 +16,20 @@
         android:background="?attr/colorPrimary"/>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/marcoSuperior"
+        android:id="@+id/texto_ingresos"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_marginStart="20dp"
         android:text="Ingresos"
-        android:textStyle="bold"
+        android:textColor="?attr/colorOnPrimary"
         android:textSize="30sp"
-        android:textColor="?attr/colorOnPrimary">
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/marcoSuperior"
+        app:layout_constraintEnd_toStartOf="@id/mini_ingresos"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
     </TextView>
 
     <androidx.cardview.widget.CardView
@@ -36,18 +40,25 @@
         app:layout_constraintBottom_toBottomOf="@id/marcoSuperior"
         app:layout_constraintTop_toTopOf="@id/marcoSuperior"
         app:layout_constraintEnd_toEndOf="@id/marcoSuperior"
+        app:layout_constraintStart_toEndOf="@id/texto_ingresos"
         app:cardCornerRadius="10dp"
         android:backgroundTint="?attr/colorSecondaryContainer">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_margin="5dp"
-            android:text="Saldo disponible:"
-            android:textStyle="bold"
-            android:textSize="16sp"
-            android:textColor="?attr/colorOnSecondaryContainer">
-        </TextView>
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:text="Saldo disponible:"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="?attr/colorOnSecondaryContainer">
+            </TextView>
+
+        </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
@@ -61,14 +72,41 @@
         app:layout_constraintBottom_toBottomOf="@id/mini_ingresos"
         android:layout_margin="20dp">
 
-        <TextView
-            android:layout_width="140dp"
-            android:layout_height="35dp"
-            android:layout_margin="5dp"
-            android:text="$2093.0000"
-            android:textSize="25sp"
-            android:textColor="?colorOnPrimaryContainer">
-        </TextView>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/oscurito"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/dolarcito2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$"
+                android:textColor="?attr/colorOnPrimaryContainer"
+                android:textSize="25sp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@id/oscurito"
+                app:layout_constraintEnd_toStartOf="@id/saldo_view"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="@id/oscurito"
+                app:layout_constraintTop_toTopOf="@id/oscurito">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/saldo_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/dolarcito2"
+                app:layout_constraintTop_toTopOf="@id/oscurito"
+                app:layout_constraintBottom_toBottomOf="@id/oscurito"
+                android:layout_margin="5dp"
+                android:text="2093.00"
+                android:textSize="25sp"
+                android:textColor="?attr/colorOnPrimaryContainer">
+            </TextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
 
@@ -80,19 +118,6 @@
         app:layout_constraintBottom_toTopOf="@id/btn_anadirIngreso"
         android:background="?attr/colorSurface">
     </androidx.recyclerview.widget.RecyclerView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/marcoSuperior"
-        android:layout_marginStart="20dp"
-        android:text="Ingresos"
-        android:textStyle="bold"
-        android:textSize="30sp"
-        android:textColor="?attr/colorOnPrimary">
-    </TextView>
 
     <Button
         android:id="@+id/btn_anadirIngreso"

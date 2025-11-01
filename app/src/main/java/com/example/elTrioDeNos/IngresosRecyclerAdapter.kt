@@ -32,7 +32,6 @@ class IngresosRecyclerAdapter:
 
         override fun getItemCount(): Int = dataCards.size
 
-        // Donde hacer la logica
         inner class IngresosViewHolder(private val binding: TarjetasIngresosBinding) :
             RecyclerView.ViewHolder(binding.root) {
             fun binding(data: Ingreso) {
@@ -45,5 +44,6 @@ class IngresosRecyclerAdapter:
         fun addDataCards(list: List<Ingreso>) {
             dataCards.clear()
             dataCards.addAll(list)
+            notifyDataSetChanged()
         }
         }

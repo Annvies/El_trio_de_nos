@@ -10,7 +10,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/tarjeta_gasto"
         android:layout_width="match_parent"
-        android:layout_height="125dp"
+        android:layout_height="wrap_content"
         app:cardCornerRadius="15dp"
         android:padding="10dp"
         android:backgroundTint="?attr/colorTertiary">
@@ -58,5 +58,4 @@
            </TextView>
        </LinearLayout>
     </androidx.cardview.widget.CardView>
-
 </LinearLayout>
