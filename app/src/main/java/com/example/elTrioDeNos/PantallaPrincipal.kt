@@ -16,6 +16,11 @@ import kotlin.collections.listOf
 
 class PantallaPrincipal : AppCompatActivity() {
 
+    companion object{
+    val ID_GASTOS = "id_gasto"
+
+    }
+
     private lateinit var binding: ActivityPantallaPrincipalBinding
     val  adapter by lazy { GastosRecyclerAdapter() }
 
@@ -40,11 +45,11 @@ class PantallaPrincipal : AppCompatActivity() {
         /////////////////bindeo con el recycleView////////////////////////////
 
         val nuevaLista =mutableListOf<Gasto>()
-        nuevaLista.add(Gasto(2.50, fecha = Date(),"pilfrut"))
+        nuevaLista.add(Gasto(2.50, fecha = Date().toString(),"pilfrut"))
 
-        nuevaLista.add(Gasto(1.00, Date(), "grosso"))
+        nuevaLista.add(Gasto(1.00, Date().toString(), "grosso"))
 
-        nuevaLista.add(Gasto(17.00, Date(), "grosso"))
+        nuevaLista.add(Gasto(17.00, Date().toString(), "grosso"))
 
         adapter.addDataCards(nuevaLista)
 
