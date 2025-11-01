@@ -1,5 +1,120 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="introMonedita">
+        Tu compañera perfecta para tener un control práctico y organizado de tus finanzas personales. Esta sección te asistirá en la comprensión de cada componente de la aplicación para que puedas sacar el máximo provecho a todas sus funcionalidades.
+    </string>
+    
+    <string name="ppText">
+        Aquí verás un resumen general de tu actividad financiera. En la parte superior encontrarás tu saldo disponible, 
+        que se actualiza automáticamente cada vez que registras un ingreso o un gasto. Debajo se presentan tus 
+        movimientos más recientes en tarjetas: cada tarjeta contiene el monto, la categoría, la fecha y una nota si la 
+        añadiste. Si aún no registraste movimientos, la app te invitará a añadir tu primer ingreso o gasto.
+    </string>
+    
+    <string name="ppCaracteristicas">
+         • Añadir gasto (botón “Añadir gasto”).\n
+        • Registrar un ingreso (botón “+” junto a tu saldo).\n
+        • Buscar movimientos (ícono de la lupa).\n
+        • Abrir el menú principal (ícono).
+    </string>
+
+    <string name="textGastoIngreso">
+        Cuando añades un gasto, podrás elegir su categoría, escribir una nota opcional y colocar el monto exacto.
+        Al guardar el gasto, tu saldo se reducirá automáticamente.
+        En cambio, al registrar un ingreso, el monto se sumará al saldo disponible.
+        Cada movimiento quedará almacenado y podrás consultarlo en cualquier momento.
+    </string>
+
+    <string name="textCategoria">
+        Monedita organiza tus gastos en categorías visuales para analizar mejor tus hábitos.
+        Ejemplos: Comida, Transporte, Entretenimiento, Mercado, Make up, Ropa, Estudios, Salud, Deudas, Regalos,
+        Mantenimiento, entre otras. Sugerencia: elige bien la categoría para mantener un historial claro y ordenado.
+    </string>
+
+    <string name="busquedaMov">
+        Desde el botón de búsqueda, puedes filtrar tus gastos o ingresos según:
+    </string>
+
+    <string name="viñetasbusMov">
+         • Categoría específica.\n
+        • Fecha exacta o rango de fechas.
+
+    </string>
+
+    <string name="loQueSigueMov">
+        El sistema mostrará los resultados en orden cronológico, con el más reciente primero.
+        Si no hay coincidencias, aparecerá un mensaje indicando que no se encontraron resultados bajo los parámetros elegidos.
+    </string>
+    
+    <string name="UsuarioAyuda">
+        En esta pantalla podrás ver la información de tu cuenta:\n
+        \n
+         • Tu correo de usuario registrado.\n
+        • Tu contraseña oculta (por seguridad).\n
+        • Un campo para cambiar la contraseña si lo deseas.\n
+        \n
+        También encontrarás el botón “Cerrar sesión”, que te llevará nuevamente a la pantalla de inicio de sesión.
+    </string>
+    <string name="seleccione_una_categoria">Seleccione una categoría</string>
+    <string name="cat_general">General</string>
+    <string name="cat_comida">Comida</string>
+    <string name="cat_entretenimiento">Entretenimiento</string>
+    <string name="cat_transporte">Transporte</string>
+    <string name="cat_mercado">Mercado</string>
+    <string name="cat_mantenimiento">Mantenimiento</string>
+    <string name="cat_ropa">Ropa</string>
+    <string name="cat_estudios">Estudios</string>
+    <string name="cat_make_up">Make up</string>
+    <string name="cat_salud">Salud</string>
+    <string name="cat_regalos">Regalos</string>
+    <string name="cat_deudas">Deudas</string>
+    <string name="escoge_la_categor_a_que_desea_buscar">Escoge la categoría que\ndesea buscar</string>
+    <string name="agregar_gasto_titulo">Agregar gasto</string>
+    <string name="monto_del_gasto">Monto del gasto</string>
+    <string name="ingrese_solo_numeros">Ingrese solo números</string>
+    <string name="nota_en_que_se_gasto">Nota en que se gastó</string>
+    <string name="a_adir_gasto">Añadir gasto</string>
+    <string name="ayuda">Ayuda</string>
+    <string name="monedita">Monedita</string>
+    <string name="intro_texto_ayuda">Tu compañera perfecta para tener un control práctico y organizado de tus finanzas personales. Esta sección te asistirá en la comprensión de cada componente de la aplicación para que puedas sacar el máximo provecho a todas sus funcionalidades.</string>
+    <string name="pantalla_principal">Pantalla Principal</string>
+    <string name="agregar_gasto_o_ingreso">Agregar gasto o ingreso</string>
+    <string name="categorias_subtit">Categorías</string>
+    <string name="busqueda_de_movimientos">Búsqueda de movimientos</string>
+    <string name="perfil_de_usuario">Perfil de usuario</string>
+    <string name="seleccione_una_fecha">Seleccione una fecha</string>
+    <string name="seleccionar_fecha">Seleccionar Fecha</string>
+    <string name="escoge_la_categoria_gasto">Escoge la categoria a la que pertenece tu gasto</string>
+    <string name="ingresos">Ingresos</string>
+    <string name="saldo_disponible">Saldo disponible:</string>
+    <string name="anadir_ingreso">Añadir Ingreso</string>
+    <string name="monedita_logo">Monedita Logo</string>
+    <string name="ingresa_tus_datos">INGRESA TUS DATOS</string>
+    <string name="correo_de_usuario">Correo de Usuario</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="crear_cuenta">Crear Cuenta</string>
+    <string name="log_in">Log In</string>
+    <string name="logo_mondita_sin_letra">Logo mondita sin letra</string>
+    <string name="perfil">Perfil</string>
+    <string name="nuevo_ingreso">Nuevo Ingreso</string>
+    <string name="agregar_ingreso">Agregar Ingreso</string>
+    <string name="nota_en_lo_que_se_gasto">Nota en lo que se gastó</string>
+    <string name="monto_del_ingreso">Monto del ingreso:</string>
+    <string name="bot_n_de_b_squeda">Botón de búsqueda</string>
+    <string name="boton_para_acceder_a_menu">Botón para acceder a menú</string>
+    <string name="ingresa_tu_primer_gasto_para_verlo">Ingresa tu primer gasto para verlo</string>
+    <string name="resultados_de_su_busqueda">Resultados de su búsqueda</string>
+    <string name="fecha">Fecha:</string>
+    <string name="categoria">Categoría:</string>
+    <string name="no_se_encontraron_resultados">No se encontraron resultados para\\n su búsqueda</string>
+    <string name="usuario">Usuario</string>
+    <string name="quieres_cambiar_tu_contrasena">QUIERES CAMBIAR TU CONTRASEÑA?</string>
+    <string name="ingresa_tu_nueva_contrasena">Ingresa tu nueva contraseña</string>
+    <string name="minimo_6_car_cteres">mínimo 6 carácteres</string>
+    <string name="guardar_contrase_a">GUARDAR CONTRASEÑA</string>
+    <string name="cerrar_sesion">CERRAR SESIÓN</string>
+    <string name="contrasenasipi">********</string>
+    <string name="icono_usuario">Icono usuario</string>
 
 
 </resources>

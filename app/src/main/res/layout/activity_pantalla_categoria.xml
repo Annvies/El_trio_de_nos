@@ -13,9 +13,9 @@
         android:id="@+id/text_selectCategoria"
         android:layout_width="match_parent"
         android:layout_height="166dp"
-        android:background="?colorPrimary"
+        android:background="?attr/colorPrimary"
         android:gravity="center"
-        android:text="Seleccione una categoría"
+        android:text="@string/seleccione_una_categoria"
         android:textStyle="bold"
         android:textColor="?attr/colorOnPrimary"
         android:textSize="24sp"
@@ -37,47 +37,37 @@
         android:paddingTop="0dp"
 
 
-        android:text="General"
+        android:text="@string/cat_general"
         android:textSize="14sp"
         android:textColor="?attr/colorOnTertiary"
         android:includeFontPadding="false"
         android:maxLines="1"
         android:padding="3dp"
-
-
         android:textAllCaps="false"
         android:drawableTop="@drawable/ic_cat_general"
         android:drawablePadding="16dp"
         />
-
-
-
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_categoria_bus2"
         android:layout_width="75dp"
         android:layout_height="75dp"
 
-
         android:background="@drawable/boton_categoria"
         android:backgroundTint="@null"
         android:drawableTop="@drawable/ic_cat_food"
         android:drawablePadding="16dp"
 
-
         android:includeFontPadding="false"
         android:maxLines="1"
         android:padding="3dp"
         android:paddingTop="0dp"
-        android:text="Comida"
+        android:text="@string/cat_comida"
         android:textAllCaps="false"
-
 
         android:textColor="?attr/colorOnTertiary"
         android:textSize="14sp"
         app:backgroundTint="@null" />
-
-
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_categoria_bus3"
         android:layout_width="75dp"
@@ -94,7 +84,7 @@
         android:maxLines="1"
         android:padding="3dp"
         android:paddingTop="0dp"
-        android:text="Entretenimiento"
+        android:text="@string/cat_entretenimiento"
         android:textAllCaps="false"
 
 
@@ -119,7 +109,7 @@
         android:maxLines="1"
         android:padding="3dp"
         android:paddingTop="0dp"
-        android:text="Transporte"
+        android:text="@string/cat_transporte"
         android:textAllCaps="false"
 
 
@@ -144,7 +134,7 @@
         android:maxLines="1"
         android:padding="3dp"
         android:paddingTop="0dp"
-        android:text="Mercado"
+        android:text="@string/cat_mercado"
         android:textAllCaps="false"
 
 
@@ -169,11 +159,11 @@
         android:maxLines="1"
         android:padding="3dp"
         android:paddingTop="0dp"
-        android:text="Mantenimiento"
+        android:text="@string/cat_mantenimiento"
         android:textAllCaps="false"
 
 
-        android:textColor="?colorOnTertiary"
+        android:textColor="?attr/colorOnTertiary"
         android:textSize="10sp"
         app:backgroundTint="@null" />
 
@@ -194,11 +184,11 @@
         android:maxLines="1"
         android:padding="3dp"
         android:paddingTop="0dp"
-        android:text="Ropa"
+        android:text="@string/cat_ropa"
         android:textAllCaps="false"
 
 
-        android:textColor="?colorOnTertiary"
+        android:textColor="?attr/colorOnTertiary"
         android:textSize="14sp"
         app:backgroundTint="@null" />
 
@@ -219,7 +209,7 @@
         android:maxLines="1"
         android:padding="3dp"
         android:paddingTop="0dp"
-        android:text="Estudios"
+        android:text="@string/cat_estudios"
         android:textAllCaps="false"
 
 
@@ -244,7 +234,7 @@
         android:maxLines="1"
         android:padding="3dp"
         android:paddingTop="0dp"
-        android:text="Make up"
+        android:text="@string/cat_make_up"
         android:textAllCaps="false"
 
 
@@ -269,11 +259,11 @@
         android:maxLines="1"
         android:padding="3dp"
         android:paddingTop="0dp"
-        android:text="Salud"
+        android:text="@string/cat_salud"
         android:textAllCaps="false"
 
 
-        android:textColor="?colorOnTertiary"
+        android:textColor="?attr/colorOnTertiary"
         android:textSize="14sp"
         app:backgroundTint="@null" />
 
@@ -294,7 +284,7 @@
         android:maxLines="1"
         android:padding="3dp"
         android:paddingTop="0dp"
-        android:text="Regalos"
+        android:text="@string/cat_regalos"
         android:textAllCaps="false"
 
 
@@ -319,7 +309,7 @@
         android:maxLines="1"
         android:padding="3dp"
         android:paddingTop="0dp"
-        android:text="Deudas"
+        android:text="@string/cat_deudas"
         android:textAllCaps="false"
 
 
@@ -359,12 +349,12 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Escoge la categoría que desea buscar"
+        android:text="@string/escoge_la_categor_a_que_desea_buscar"
         android:textStyle="bold"
         android:textColor="?attr/colorSecondary"
         android:textSize="19sp"
         android:gravity="center"
-        android:paddingTop="30dp"
+        android:layout_marginBottom="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         />
 

@@ -14,7 +14,7 @@
         android:layout_height="166dp"
         android:background="?attr/colorPrimary"
         android:gravity="center"
-        android:text="Agregar gasto"
+        android:text="@string/agregar_gasto_titulo"
         android:textStyle="bold"
         android:textColor="?attr/colorOnPrimary"
         android:textSize="24sp"
@@ -32,7 +32,7 @@
         app:backgroundTint="@null"
         android:paddingTop="0dp"
 
-        android:text="Deudas"
+        android:text="@string/cat_deudas"
         android:textSize="14sp"
         android:textColor="?attr/colorOnTertiaryContainer"
         android:includeFontPadding="false"
@@ -59,7 +59,7 @@
         android:maxLines="1"
         android:padding="3dp"
         android:paddingTop="0dp"
-        android:text="Comida"
+        android:text="@string/cat_comida"
         android:textAllCaps="false"
 
         android:textColor="?attr/colorOnTertiaryContainer"
@@ -80,7 +80,7 @@
         android:maxLines="1"
         android:padding="3dp"
         android:paddingTop="0dp"
-        android:text="Entrenimiento"
+        android:text="@string/cat_entretenimiento"
         android:textAllCaps="false"
 
         android:textColor="?attr/colorOnTertiaryContainer"
@@ -101,7 +101,7 @@
         android:maxLines="1"
         android:padding="3dp"
         android:paddingTop="0dp"
-        android:text="Transporte"
+        android:text="@string/cat_transporte"
         android:textAllCaps="false"
 
         android:textColor="?attr/colorOnTertiaryContainer"
@@ -122,7 +122,7 @@
         android:maxLines="1"
         android:padding="3dp"
         android:paddingTop="0dp"
-        android:text="Mercado"
+        android:text="@string/cat_mercado"
         android:textAllCaps="false"
 
         android:textColor="?attr/colorOnTertiaryContainer"
@@ -143,7 +143,7 @@
         android:maxLines="1"
         android:padding="3dp"
         android:paddingTop="0dp"
-        android:text="Mantenimiento"
+        android:text="@string/cat_mantenimiento"
         android:textAllCaps="false"
 
         android:textColor="?attr/colorOnTertiaryContainer"
@@ -164,7 +164,7 @@
         android:maxLines="1"
         android:padding="3dp"
         android:paddingTop="0dp"
-        android:text="Ropa"
+        android:text="@string/cat_ropa"
         android:textAllCaps="false"
 
         android:textColor="?attr/colorOnTertiaryContainer"
@@ -185,7 +185,7 @@
         android:maxLines="1"
         android:padding="3dp"
         android:paddingTop="0dp"
-        android:text="Estudios"
+        android:text="@string/cat_estudios"
         android:textAllCaps="false"
 
         android:textColor="?attr/colorOnTertiaryContainer"
@@ -206,7 +206,7 @@
         android:maxLines="1"
         android:padding="3dp"
         android:paddingTop="0dp"
-        android:text="Make up"
+        android:text="@string/cat_make_up"
         android:textAllCaps="false"
 
         android:textColor="?attr/colorOnTertiaryContainer"
@@ -227,7 +227,7 @@
         android:maxLines="1"
         android:padding="3dp"
         android:paddingTop="0dp"
-        android:text="Salud"
+        android:text="@string/cat_salud"
         android:textAllCaps="false"
 
         android:textColor="?attr/colorOnTertiaryContainer"
@@ -248,7 +248,7 @@
         android:maxLines="1"
         android:padding="3dp"
         android:paddingTop="0dp"
-        android:text="Regalos"
+        android:text="@string/cat_regalos"
         android:textAllCaps="false"
 
         android:textColor="?attr/colorOnTertiaryContainer"
@@ -282,7 +282,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Escoge la categoria a la que pertenece tu gasto"
+        android:text="@string/escoge_la_categoria_gasto"
         android:background="?attr/colorSurface"
         android:textStyle="bold"
         android:textColor="?attr/colorSecondary"

@@ -12,14 +12,26 @@
 
     <ImageView
         android:id="@+id/logo_monedita"
-        android:layout_width="375dp"
-        android:layout_height="375dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:layout_marginTop="64dp"
-        android:src="@drawable/logo_letra"
-        android:contentDescription="Monedita Logo"
+        android:src="@drawable/logo_fondo_vacio"
+        android:contentDescription="@string/logo_mondita_sin_letra"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/logo_monedita"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="MONDEDITA"
+        android:textSize="35sp"
+        android:textColor="?attr/colorOnPrimary"
+        android:textStyle="bold"
+        />
 
 
     <TextView
@@ -27,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
-        android:text="INGRESA TUS DATOS"
+        android:text="@string/ingresa_tus_datos"
         android:textSize="16sp"
         android:textColor="?attr/colorSecondary"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,12 +47,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="260dp"/>
 
+
     <EditText
-        android:id="@+id/password_edittext"
+        android:id="@+id/email_edittext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Contraseña"
-        android:inputType="textPassword"
+        android:hint="@string/correo_de_usuario"
         android:lines="1"
         android:maxLines="1"
         android:paddingBottom="12dp"
@@ -48,22 +60,23 @@
         android:textSize="18sp"
         app:layout_constraintTop_toBottomOf="@id/ingresa_datos"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="10dp"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
-        android:id="@+id/email_edittext"
+        android:id="@+id/password_edittext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Correo de Usuario"
+        android:hint="@string/contrasena"
+        android:inputType="textPassword"
         android:lines="1"
         android:maxLines="1"
         android:paddingBottom="12dp"
         android:textColor="?attr/colorOnTertiary"
         android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@id/password_edittext"
+        app:layout_constraintTop_toBottomOf="@id/email_edittext"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
 
 
     <Button
@@ -71,11 +84,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Crear Cuenta"
+        android:text="@string/crear_cuenta"
         android:textColor="?attr/colorOnSecondary"
         android:textSize="18sp"
         android:backgroundTint="?attr/colorSecondary"
-        app:layout_constraintTop_toBottomOf="@id/email_edittext"
+        app:layout_constraintTop_toBottomOf="@id/password_edittext"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -83,12 +96,12 @@
         android:id="@+id/btn_logIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="65dp"
-        android:text="Log In"
+        android:layout_marginTop="5dp"
+        android:text="@string/log_in"
         android:textColor="?attr/colorOnPrimary"
         android:textSize="18sp"
         android:backgroundTint="?attr/colorPrimary"
-        app:layout_constraintTop_toBottomOf="@id/email_edittext"
+        app:layout_constraintTop_toBottomOf="@id/btn_crearCuenta"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

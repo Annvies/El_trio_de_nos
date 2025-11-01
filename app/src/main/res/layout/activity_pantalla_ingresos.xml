@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="@id/marcoSuperior"
         android:layout_marginStart="20dp"
-        android:text="Ingresos"
+        android:text="@string/ingresos"
         android:textStyle="bold"
         android:textSize="30sp"
         android:textColor="?attr/colorOnPrimary">
@@ -43,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_margin="5dp"
-            android:text="Saldo disponible:"
+            android:text="@string/saldo_disponible"
             android:textStyle="bold"
             android:textSize="16sp"
             android:textColor="?attr/colorOnSecondaryContainer">
@@ -65,9 +65,8 @@
             android:layout_width="140dp"
             android:layout_height="35dp"
             android:layout_margin="5dp"
-            android:text="$2093.0000"
             android:textSize="25sp"
-            android:textColor="?colorOnPrimaryContainer">
+            android:textColor="?attr/colorOnPrimaryContainer">
         </TextView>
 
     </androidx.cardview.widget.CardView>
@@ -81,18 +80,7 @@
         android:background="?attr/colorSurface">
     </androidx.recyclerview.widget.RecyclerView>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/marcoSuperior"
-        android:layout_marginStart="20dp"
-        android:text="Ingresos"
-        android:textStyle="bold"
-        android:textSize="30sp"
-        android:textColor="?attr/colorOnPrimary">
-    </TextView>
+
 
     <Button
         android:id="@+id/btn_anadirIngreso"
@@ -104,7 +92,7 @@
         android:backgroundTint="?attr/colorPrimary"
         android:textColor="?attr/colorOnPrimary"
         android:layout_marginBottom="35dp"
-        android:text="Añadir Ingreso"
+        android:text="@string/anadir_ingreso"
         android:textSize="26sp">
     </Button>
 
