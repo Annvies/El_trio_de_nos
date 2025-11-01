@@ -6,12 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PantallaMenu"
-    android:background="?attr/colorSecondary">
+    android:background="?attr/colorSurfaceVariant">
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="200dp"
         android:layout_height="200dp"
+        android:contentDescription="@string/logo_mondita_sin_letra"
         android:src="@drawable/logo_fondo_vacio"
         android:layout_marginTop="98dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,8 +24,8 @@
         android:id="@+id/btn_perfil"
         android:layout_width="174dp"
         android:layout_height="122dp"
-        android:backgroundTint="?attr/colorSecondary"
-        android:text="Perfil"
+        android:backgroundTint="?attr/colorSurfaceVariant"
+        android:text="@string/perfil"
         android:textColor="?attr/colorOnPrimary"
         android:drawableTop="@drawable/ic_menu_user"
         android:textSize="24sp"
@@ -41,8 +42,8 @@
         android:id="@+id/btn_ayuda"
         android:layout_width="174dp"
         android:layout_height="122dp"
-        android:backgroundTint="?attr/colorSecondary"
-        android:text="Ayuda"
+        android:backgroundTint="?attr/colorSurfaceVariant"
+        android:text="@string/ayuda"
         android:textColor="?attr/colorOnPrimary"
         android:drawableTop="@drawable/ic_menu_help"
         android:textSize="24sp"

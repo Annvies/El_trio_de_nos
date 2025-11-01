@@ -16,35 +16,45 @@
         android:background="?attr/colorPrimary"/>
 
     <ImageView
+        android:id="@+id/logo_monedita_pp"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:contentDescription="@string/logo_mondita_sin_letra"
         app:layout_constraintTop_toTopOf="@id/marcoSuperior"
-        app:layout_constraintStart_toStartOf="@id/marcoSuperior"
-        app:layout_constraintEnd_toEndOf="@id/marcoSuperior"
+        app:layout_constraintStart_toEndOf="@+id/btn_buscar"
+        app:layout_constraintEnd_toStartOf="@+id/menu_boton"
         android:src="@drawable/logo_fondo_vacio">
     </ImageView>
 
-    <ImageView
+
+    <ImageButton
         android:id="@+id/btn_buscar"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        app:layout_constraintStart_toStartOf="@id/marcoSuperior"
-        app:layout_constraintTop_toTopOf="@id/marcoSuperior"
-        app:layout_constraintBottom_toBottomOf="@+id/marcoSuperior"
         android:layout_margin="40dp"
-        android:src="@drawable/ic_pp_magnifying_glass">
-    </ImageView>
+        android:background="?attr/colorPrimary"
+        android:contentDescription="@string/bot_n_de_b_squeda"
+        android:src="@drawable/ic_pp_magnifying_glass"
+        app:layout_constraintBottom_toBottomOf="@+id/marcoSuperior"
+        app:layout_constraintEnd_toStartOf="@+id/logo_monedita_pp"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@id/marcoSuperior"
+        app:layout_constraintTop_toTopOf="@id/marcoSuperior" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/menu_boton"
         android:layout_width="80dp"
         android:layout_height="80dp"
+        android:background="?attr/colorPrimary"
+        android:contentDescription="@string/boton_para_acceder_a_menu"
         app:layout_constraintEnd_toEndOf="@id/marcoSuperior"
         app:layout_constraintTop_toTopOf="@id/marcoSuperior"
         app:layout_constraintBottom_toBottomOf="@+id/marcoSuperior"
+        app:layout_constraintStart_toEndOf="@+id/logo_monedita_pp"
         android:layout_margin="40dp"
-        android:src="@drawable/ic_pp_menu">
-    </ImageView>
+        android:src="@drawable/ic_pp_menu"
+        android:layout_marginRight="10dp">
+    </ImageButton>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/recuadro_saldo"
@@ -64,7 +74,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Saldo Disponible:"
+                android:text="@string/saldo_disponible"
                 android:textColor="?attr/colorOnSecondaryContainer"
                 android:textStyle="bold"
                 android:textSize="19sp"
@@ -118,16 +128,18 @@
                 android:textColor="?attr/colorOnTertiaryContainer">
             </TextView>
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/anadir_ingreso_boton"
                 android:layout_width="44dp"
                 android:layout_height="44dp"
+                android:background="?attr/colorTertiaryContainer"
                 app:layout_constraintTop_toTopOf="@id/clarito"
                 app:layout_constraintBottom_toBottomOf="@id/clarito"
                 app:layout_constraintEnd_toEndOf="@id/clarito"
                 android:layout_marginEnd="3dp"
                 android:src="@drawable/ic_pp_plus">
-            </ImageView>
+            </ImageButton>
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -148,7 +160,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="Ingresa tu primer gasto para verlo"
+                android:text="@string/ingresa_tu_primer_gasto_para_verlo"
                 android:textSize="18sp"
                 android:textColor="?attr/colorOnTertiary"
                 android:textStyle="bold">
@@ -174,7 +186,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:backgroundTint="?attr/colorPrimary"
         android:textColor="?attr/colorOnPrimary"
-        android:text="Añadir gasto"
+        android:text="@string/a_adir_gasto"
         android:textSize="26sp"
         android:gravity="center"
         android:layout_marginBottom="20dp"/>

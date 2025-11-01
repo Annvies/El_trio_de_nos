@@ -13,60 +13,207 @@
         android:id="@+id/marcoSuperior"
         android:layout_width="match_parent"
         android:layout_height="180dp"
-        android:background="#4B1920"
+        android:background="?attr/colorPrimary"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
         android:id="@+id/titulo"
-        android:layout_width="match_parent"
-        android:background="?attr/colorPrimary"
-        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="@id/marcoSuperior"
         app:layout_constraintBottom_toBottomOf="@id/marcoSuperior"
         android:gravity="center"
-        android:text="Ayuda"
+        android:text="@string/ayuda"
         android:textStyle="bold"
         android:textColor="?attr/colorOnPrimary"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toEndOf="@+id/simboloAyuda">
 
     </TextView>
 
     <ImageView
+        android:id="@+id/simboloAyuda"
         android:layout_width="39dp"
         android:layout_height="39dp"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="64dp"
         android:foregroundGravity="center"
         android:src="@drawable/ic_menu_help"
-        app:layout_constraintStart_toStartOf="@+id/titulo"
         app:layout_constraintBottom_toBottomOf="@id/marcoSuperior"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintEnd_toStartOf="@+id/titulo"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="600dp"
-        android:breakStrategy="balanced"
-        android:lineHeight="24sp"
-        android:text="Bienvenido a Monedita tu asistente para controlar tus finanzas.\n
--Desde el inicio podras ver tu saldo y los ultimos movimientos.\n
--Para registrar un ingreso,presiona 'Añadir ingreso' y escribe el monto y una nota.\n
--Para registrar un gasto, toca 'Agregar gasto', elige una categoria, escribe el monto y guarda.\n
--En la lupa podras buscar movimientos por fecha o categoria.\n
--En el menu de Ajustes puedes cambiar entre tema claro y oscuro.\n
--En perfil podras ver tus datos,cambiar la contraaseña o cerrar sesion.\n
-Monedita esta hecha para que administrar tu dinero sea rapido, facil y visual.\n
-ATENTAMENTE: EL_TRIO_DE_NOS"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/titulo"
-        android:layout_margin="16dp"
-        android:textSize="19dp"
-        android:hyphenationFrequency="full"
+    <ScrollView
+        android:id="@+id/scrollAyuda"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/marcoSuperior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    </TextView>
+            <TextView
+                android:id="@+id/tituloMonedita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/monedita"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/intro_texto_ayuda"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:textSize="15sp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/ppAyuda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/pantalla_principal"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/ppText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/ppText"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:textSize="15sp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/ppCaracterísticas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/ppCaracteristicas"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:textSize="15sp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/textGastoIngreso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/agregar_gasto_o_ingreso"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/agregarGasto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/ppText"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/catTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/categorias_subtit"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/catText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/textCategoria"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/busMovAyuda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/busqueda_de_movimientos"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/textBusMovAyuda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/busquedaMov"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textviñetasMov"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/viñetasbusMov"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/LoQueSigue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/loQueSigueMov"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/UserAyuda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/perfil_de_usuario"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/textUserAyuda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/UsuarioAyuda"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:textSize="15sp" />
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

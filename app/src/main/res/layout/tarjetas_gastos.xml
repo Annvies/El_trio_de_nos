@@ -24,7 +24,6 @@
                 android:id="@+id/precio"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="$60.00"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="?attr/colorOnTertiary">
@@ -34,7 +33,6 @@
                android:id="@+id/nota"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:text="Silksong"
                android:textSize="15sp"
                android:textColor="?attr/colorOnTertiary">
            </TextView>
@@ -43,7 +41,6 @@
                android:id="@+id/fecha"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:text="Fecha: 16/04/28"
                android:textSize="15sp"
                android:textColor="?attr/colorOnTertiary">
            </TextView>
@@ -52,7 +49,6 @@
                android:id="@+id/categoria"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:text="Categoria: Entetenimiento"
                android:textSize="15sp"
                android:textColor="?attr/colorOnTertiary">
            </TextView>

@@ -8,12 +8,14 @@
     android:background="?attr/colorSurfaceVariant"
     tools:context=".PantallaAgregarGasto">
 
+
+
     <TextView
-        android:id="@+id/view1"
+        android:id="@+id/tituloAgregarGasto"
         android:layout_width="match_parent"
         android:layout_height="166dp"
         android:background="?attr/colorPrimary"
-        android:text="Agregar gasto"
+        android:text="@string/agregar_gasto_titulo"
         android:textStyle="bold"
         android:textSize="30sp"
         android:gravity="center"
@@ -21,33 +23,33 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/view2"
+        android:id="@+id/textoMontoGasto"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
-        android:text="Monto del gasto"
+        android:text="@string/monto_del_gasto"
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="?attr/colorOnTertiary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view1" />
+        app:layout_constraintTop_toBottomOf="@+id/tituloAgregarGasto" />
 
     <EditText
         android:id="@+id/monto_gastado"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:background="?colorSecondaryContainer"
+        android:background="?attr/colorSecondaryContainer"
         android:inputType="numberDecimal"
         android:padding="12dp"
-        android:hint="Ingrese solo números"
+        android:hint="@string/ingrese_solo_numeros"
         android:textColorHint="?attr/colorOnSecondaryContainer"
         android:textColor="?attr/colorOnSecondaryContainer"
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view2" />
+        app:layout_constraintTop_toBottomOf="@+id/textoMontoGasto" />
 
 
     <EditText
@@ -56,7 +58,7 @@
         android:layout_height="wrap_content"
         android:background="?attr/colorSecondaryContainer"
         android:padding="12dp"
-        android:hint="Nota en que se gasto"
+        android:hint="@string/nota_en_que_se_gasto"
         android:textColor="?attr/colorOnSecondaryContainer"
         android:textColorHint="?attr/colorOnSecondaryContainer"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,7 +71,7 @@
         android:id="@+id/division1"
         android:layout_width="300dp"
         android:layout_height="2dp"
-        android:background="?colorOnTertiaryContainer"
+        android:background="?attr/colorOnTertiaryContainer"
         app:layout_constraintTop_toBottomOf="@id/nota"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -80,7 +82,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="48dp"
         android:backgroundTint="?attr/colorPrimaryContainer"
-        android:text="Agregar gasto"
+        android:text="@string/a_adir_gasto"
         android:textColor="?attr/colorOnPrimaryContainer"
         android:textStyle="bold"
         android:textSize="20sp"

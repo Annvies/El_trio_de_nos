@@ -24,7 +24,6 @@
                 android:id="@+id/precio"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="$60.00"
                 android:textSize="22sp"
                 android:textStyle="bold"
                 android:textColor="?attr/colorOnTertiary">
@@ -34,7 +33,6 @@
                 android:id="@+id/nota"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Silksong"
                 android:textSize="18sp"
                 android:textColor="?attr/colorOnTertiary">
             </TextView>
@@ -43,7 +41,6 @@
                 android:id="@+id/fecha"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Fecha: 16/04/28"
                 android:textSize="18sp"
                 android:textColor="?attr/colorOnTertiary">
             </TextView>

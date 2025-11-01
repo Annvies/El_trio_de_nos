@@ -22,18 +22,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="@+id/marcoSuperior"
-        android:text="Nuevo Ingreso"
+        android:text="@string/nuevo_ingreso"
         android:textColor="?attr/colorOnPrimary"
         android:textSize="26sp"
         android:textStyle="bold">
     </TextView>
+
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/marcoSuperior"
         android:layout_margin="40dp"
-        android:text="Monto del ingreso:"
+        android:text="@string/monto_del_ingreso"
         android:textColor="?attr/colorSecondary"
         android:textSize="24sp"
         android:textStyle="bold">
@@ -50,7 +51,7 @@
         android:layout_margin="100dp"
         android:padding="15dp"
         android:background="?attr/colorSecondary"
-        android:hint="Ingrese solo numeros"
+        android:hint="@string/ingrese_solo_numeros"
         android:textSize="16sp"
         android:textColorHint="?attr/colorTertiary"
         android:textColor="?attr/colorOnSecondary">
