@@ -34,11 +34,11 @@ class PantallaIngresos : AppCompatActivity() {
         //////////////////bindeo con recycleView////////////////////////////////////
 
         val nuevaLista = mutableListOf<Ingreso>()
-        nuevaLista.add(Ingreso(400.0, "mesada", Date()))
+        nuevaLista.add(Ingreso(400.0, "mesada", Date().toString()))
 
-        nuevaLista.add(Ingreso(50.0, "deuda", Date()))
+        nuevaLista.add(Ingreso(50.0, "deuda", Date().toString()))
 
-        nuevaLista.add(Ingreso(2.50, "chamba", Date()))
+        nuevaLista.add(Ingreso(2.50, "chamba", Date().toString()))
 
         adapter.addDataCards(nuevaLista)
 
