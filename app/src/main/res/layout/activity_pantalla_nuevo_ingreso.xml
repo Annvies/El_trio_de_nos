@@ -62,7 +62,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@id/agregarIngreso"
         android:layout_margin="20dp"
-        android:hint="Nota en lo que se gasto"
+        android:hint="Nota de informacion de ingreso"
         android:textColorHint="?attr/colorOnSurfaceVariant"
         android:textColor="?attr/colorOnTertiary"
         android:textSize="24sp">

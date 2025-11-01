@@ -3,11 +3,14 @@ package com.example.elTrioDeNos
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.widget.DatePicker
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.elTrioDeNos.databinding.ActivityPantallaCalendarioBinding
+import java.util.Calendar
 
 class PantallaCalendario : AppCompatActivity() {
 
@@ -26,11 +29,28 @@ class PantallaCalendario : AppCompatActivity() {
             insets
         }
 
+
         val contexto: Context = this
 
         binding.btnSelecionarFecha.setOnClickListener {
             val cambioCategorias: Intent = Intent(contexto, PantallaCategoria::class.java)
             startActivity(cambioCategorias)
         }
+
+
+
+        val today = Calendar.getInstance()
+
+
+        binding.datePicker.init(
+            today.get(Calendar.YEAR),
+            today.get(Calendar.MONTH),
+            today.get(Calendar.DAY_OF_MONTH)
+        ) {
+          view, year, month, day ->
+            //mensaje
+            val msg = "You Selected: $day/${month+1}/$year"
+            Toast.makeText(this@PantallaCalendario, msg, Toast.LENGTH_SHORT).show()
+        }
     }
-}
+    }

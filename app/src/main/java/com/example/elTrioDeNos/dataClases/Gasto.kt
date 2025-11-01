@@ -6,5 +6,5 @@ data class Gasto(
     val categoria: String,
     val monto: Double,
     val fecha: String,
-    val nota: String
+    val nota: String,
 )

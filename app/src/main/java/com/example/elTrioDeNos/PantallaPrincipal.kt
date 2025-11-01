@@ -16,10 +16,7 @@ import kotlin.collections.listOf
 
 class PantallaPrincipal : AppCompatActivity() {
 
-    companion object{
-    val ID_GASTOS = "id_gasto"
 
-    }
 
     private lateinit var binding: ActivityPantallaPrincipalBinding
     val  adapter by lazy { GastosRecyclerAdapter() }
