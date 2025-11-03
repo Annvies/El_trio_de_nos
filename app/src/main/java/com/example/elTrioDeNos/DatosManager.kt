@@ -10,13 +10,14 @@ object DatosManager {
     private const val PREF_NAME = "mis_datos"
     private const val CLAVE_INGRESOS = "ingresos"
     private const val CLAVE_SALDO = "saldo"
+    private const val CLAVE_GASTOS = "gastos"
 
+    private val gson = Gson()
 
-    ///////////////////////////INGRESOS////////////////////////////////////////////////////////
+    ////////////////////////////////INGRESOS////////////////////////////////////////////////////////
 
     fun guardarIngreso(context: Context, ingreso: Ingreso) {
         val prefs = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
-        val gson = Gson()
         val listaActual = obtenerIngresos(context).toMutableList()
         listaActual.add(0, ingreso) // lo agregamos al inicio
 
@@ -31,9 +32,13 @@ object DatosManager {
         val prefs = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
         val json = prefs.getString(CLAVE_INGRESOS, null)
         val type = object : TypeToken<List<Ingreso>>() {}.type
-        return if (json != null) Gson().fromJson(json, type) else emptyList()
+        if(json != null){
+            return Gson().fromJson(json, type)
+        } else {
+            return emptyList()
+        }
+        //return if (json != null) Gson().fromJson(json, type) else emptyList()
     }
-
 
     /////////////////////////////////////SALDO/////////////////////////////////////////////////
 
@@ -47,30 +52,34 @@ object DatosManager {
         prefs.edit().putFloat(CLAVE_SALDO, saldo.toFloat()).apply()
     }
 
-    ////////////////////////////////GASTOS/////////////////////////////////////////////////////
+    /////////////////////////////////////GASTOS/////////////////////////////////////////////////////
 
     fun guardarGasto(context: Context, gasto: Gasto) {
-        val prefs = context.getSharedPreferences("datos", Context.MODE_PRIVATE)
-        val gson = Gson()
-        val json = prefs.getString("gastos", "[]")
-        val type = object : TypeToken<MutableList<Gasto>>() {}.type
-        val lista = gson.fromJson<MutableList<Gasto>>(json, type) ?: mutableListOf()
+        val prefs = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
 
-        lista.add(gasto)
+        val listaActual = obtenerGastos(context).toMutableList()
+        listaActual.add(0,gasto)
 
-        val jsonNuevo = gson.toJson(lista)
-        prefs.edit().putString("gastos", jsonNuevo).apply()
-
-        // Restar del saldo total
-        val saldoActual = obtenerSaldo(context)
-        guardarSaldo(context, saldoActual - gasto.monto)
+        val json = gson.toJson(listaActual)
+        prefs.edit().putString(CLAVE_GASTOS, json).putFloat(CLAVE_SALDO,(obtenerSaldo(context) - gasto.monto).toFloat()).apply()
     }
 
     fun obtenerGastos(context: Context): List<Gasto> {
-        val prefs = context.getSharedPreferences("datos", Context.MODE_PRIVATE)
-        val gson = Gson()
-        val json = prefs.getString("gastos", "[]")
+        val prefs = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
+        val json = prefs.getString(CLAVE_GASTOS, null)
         val type = object : TypeToken<List<Gasto>>() {}.type
         return gson.fromJson(json, type) ?: emptyList()
+    }
+
+    ////////////////////////////////////////BUSQUEDA////////////////////////////////////////////////
+
+    fun buscarGastos(context: Context, fecha: String, categoria: String): List<Gasto> {
+        val gastos: List<Gasto> = obtenerGastos(context)
+
+        if (categoria.lowercase() == "general") {
+            return gastos.filter { it.fecha == fecha }
+        } else {
+            return gastos.filter { it.fecha == fecha && it.categoria.lowercase() == categoria.lowercase() }
+        }
     }
 }

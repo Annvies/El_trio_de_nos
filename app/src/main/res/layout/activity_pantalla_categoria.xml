@@ -8,7 +8,6 @@
     tools:context=".PantallaCategoria"
     android:background="?attr/colorSurface">
 
-
     <TextView
         android:id="@+id/text_selectCategoria"
         android:layout_width="match_parent"
@@ -22,20 +21,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_categoria_bus1"
+        android:id="@+id/btn_cat_general"
         android:layout_width="75dp"
         android:layout_height="75dp"
-
 
         android:background="@drawable/boton_categoria"
         android:backgroundTint="@null"
         app:backgroundTint="@null"
         android:paddingTop="0dp"
-
 
         android:text="@string/cat_general"
         android:textSize="14sp"
@@ -45,11 +41,10 @@
         android:padding="3dp"
         android:textAllCaps="false"
         android:drawableTop="@drawable/ic_cat_general"
-        android:drawablePadding="16dp"
-        />
+        android:drawablePadding="16dp" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_categoria_bus2"
+        android:id="@+id/btn_cat_comida"
         android:layout_width="75dp"
         android:layout_height="75dp"
 
@@ -68,17 +63,16 @@
         android:textColor="?attr/colorOnTertiary"
         android:textSize="14sp"
         app:backgroundTint="@null" />
+
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_categoria_bus3"
+        android:id="@+id/btn_cat_entretenimiento"
         android:layout_width="75dp"
         android:layout_height="75dp"
-
 
         android:background="@drawable/boton_categoria"
         android:backgroundTint="@null"
         android:drawableTop="@drawable/ic_cat_entertainment"
         android:drawablePadding="16dp"
-
 
         android:includeFontPadding="false"
         android:maxLines="1"
@@ -87,23 +81,19 @@
         android:text="@string/cat_entretenimiento"
         android:textAllCaps="false"
 
-
         android:textColor="?attr/colorOnTertiary"
         android:textSize="9sp"
         app:backgroundTint="@null"/>
 
-
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_categoria_bus4"
+        android:id="@+id/btn_cat_transporte"
         android:layout_width="75dp"
         android:layout_height="75dp"
-
 
         android:background="@drawable/boton_categoria"
         android:backgroundTint="@null"
         android:drawableTop="@drawable/ic_cat_transport"
         android:drawablePadding="16dp"
-
 
         android:includeFontPadding="false"
         android:maxLines="1"
@@ -112,14 +102,12 @@
         android:text="@string/cat_transporte"
         android:textAllCaps="false"
 
-
         android:textColor="?attr/colorOnTertiary"
         android:textSize="13sp"
         app:backgroundTint="@null" />
 
-
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_categoria_bus5"
+        android:id="@+id/btn_cat_mercado"
         android:layout_width="75dp"
         android:layout_height="75dp"
 
@@ -142,18 +130,15 @@
         android:textSize="14sp"
         app:backgroundTint="@null" />
 
-
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_categoria_bus6"
+        android:id="@+id/btn_cat_mantenimiento"
         android:layout_width="75dp"
         android:layout_height="75dp"
-
 
         android:background="@drawable/boton_categoria"
         android:backgroundTint="@null"
         android:drawableTop="@drawable/ic_cat_settings"
         android:drawablePadding="16dp"
-
 
         android:includeFontPadding="false"
         android:maxLines="1"
@@ -162,23 +147,19 @@
         android:text="@string/cat_mantenimiento"
         android:textAllCaps="false"
 
-
         android:textColor="?attr/colorOnTertiary"
         android:textSize="10sp"
         app:backgroundTint="@null" />
 
-
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_categoria_bus7"
+        android:id="@+id/btn_cat_ropa"
         android:layout_width="75dp"
         android:layout_height="75dp"
-
 
         android:background="@drawable/boton_categoria"
         android:backgroundTint="@null"
         android:drawableTop="@drawable/ic_cat_clothes"
         android:drawablePadding="16dp"
-
 
         android:includeFontPadding="false"
         android:maxLines="1"
@@ -192,9 +173,8 @@
         android:textSize="14sp"
         app:backgroundTint="@null" />
 
-
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_categoria_bus8"
+        android:id="@+id/btn_cat_estudios"
         android:layout_width="75dp"
         android:layout_height="75dp"
 
@@ -217,18 +197,15 @@
         android:textSize="14sp"
         app:backgroundTint="@null"/>
 
-
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_categoria_bus9"
+        android:id="@+id/btn_cat_makeup"
         android:layout_width="75dp"
         android:layout_height="75dp"
-
 
         android:background="@drawable/boton_categoria"
         android:backgroundTint="@null"
         android:drawableTop="@drawable/ic_cat_makeup"
         android:drawablePadding="16dp"
-
 
         android:includeFontPadding="false"
         android:maxLines="1"
@@ -237,23 +214,19 @@
         android:text="@string/cat_make_up"
         android:textAllCaps="false"
 
-
         android:textColor="?attr/colorOnTertiary"
         android:textSize="14sp"
         app:backgroundTint="@null"/>
 
-
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_categoria_bus10"
+        android:id="@+id/btn_cat_salud"
         android:layout_width="75dp"
         android:layout_height="75dp"
-
 
         android:background="@drawable/boton_categoria"
         android:backgroundTint="@null"
         android:drawableTop="@drawable/ic_cat_health"
         android:drawablePadding="16dp"
-
 
         android:includeFontPadding="false"
         android:maxLines="1"
@@ -262,23 +235,19 @@
         android:text="@string/cat_salud"
         android:textAllCaps="false"
 
-
         android:textColor="?attr/colorOnTertiary"
         android:textSize="14sp"
         app:backgroundTint="@null" />
 
-
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_categoria_bus11"
+        android:id="@+id/btn_cat_regalos"
         android:layout_width="75dp"
         android:layout_height="75dp"
-
 
         android:background="@drawable/boton_categoria"
         android:backgroundTint="@null"
         android:drawableTop="@drawable/ic_cat_gift"
         android:drawablePadding="16dp"
-
 
         android:includeFontPadding="false"
         android:maxLines="1"
@@ -287,23 +256,19 @@
         android:text="@string/cat_regalos"
         android:textAllCaps="false"
 
-
         android:textColor="?attr/colorOnTertiary"
         android:textSize="14sp"
         app:backgroundTint="@null" />
 
-
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_categoria_bus12"
+        android:id="@+id/btn_cat_deudas"
         android:layout_width="75dp"
         android:layout_height="75dp"
-
 
         android:background="@drawable/boton_categoria"
         android:backgroundTint="@null"
         android:drawableTop="@drawable/ic_cat_debt"
         android:drawablePadding="16dp"
-
 
         android:includeFontPadding="false"
         android:maxLines="1"
@@ -312,11 +277,9 @@
         android:text="@string/cat_deudas"
         android:textAllCaps="false"
 
-
         android:textColor="?attr/colorOnTertiary"
         android:textSize="14sp"
         app:backgroundTint="@null"/>
-
 
     <androidx.constraintlayout.helper.widget.Flow
         android:id="@+id/flow_Categorias"
@@ -326,9 +289,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
 
-
-        app:constraint_referenced_ids="btn_categoria_bus1,btn_categoria_bus2,btn_categoria_bus3,btn_categoria_bus4,btn_categoria_bus5,btn_categoria_bus6,btn_categoria_bus7,btn_categoria_bus8,btn_categoria_bus9,btn_categoria_bus10,btn_categoria_bus11,btn_categoria_bus12"
-
+        app:constraint_referenced_ids="btn_cat_general,btn_cat_comida,btn_cat_entretenimiento,btn_cat_transporte,btn_cat_mercado,btn_cat_mantenimiento,btn_cat_ropa,btn_cat_estudios,btn_cat_makeup,btn_cat_salud,btn_cat_regalos,btn_cat_deudas"
 
         app:flow_wrapMode="aligned"
         app:flow_maxElementsWrap="3"
@@ -339,12 +300,10 @@
         app:flow_horizontalBias="0.5"
         app:flow_verticalBias="0"
 
-
         android:paddingStart="27dp"
         android:paddingEnd="27dp"
         android:paddingTop="27dp"
         android:paddingBottom="27dp"/>
-
 
     <TextView
         android:layout_width="match_parent"
@@ -357,9 +316,5 @@
         android:layout_marginBottom="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         />
-
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
 

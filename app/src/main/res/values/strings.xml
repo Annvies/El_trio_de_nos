@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Monedita</string>
     <string name="introMonedita">
         Tu compañera perfecta para tener un control práctico y organizado de tus finanzas personales. Esta sección te asistirá en la comprensión de cada componente de la aplicación para que puedas sacar el máximo provecho a todas sus funcionalidades.
     </string>
@@ -106,7 +106,7 @@
     <string name="resultados_de_su_busqueda">Resultados de su búsqueda</string>
     <string name="fecha">Fecha:</string>
     <string name="categoria">Categoría:</string>
-    <string name="no_se_encontraron_resultados">No se encontraron resultados para\\n su búsqueda</string>
+    <string name="no_se_encontraron_resultados">No se encontraron resultados para\n su búsqueda</string>
     <string name="usuario">Usuario</string>
     <string name="quieres_cambiar_tu_contrasena">QUIERES CAMBIAR TU CONTRASEÑA?</string>
     <string name="ingresa_tu_nueva_contrasena">Ingresa tu nueva contraseña</string>
@@ -115,6 +115,9 @@
     <string name="cerrar_sesion">CERRAR SESIÓN</string>
     <string name="contrasenasipi">********</string>
     <string name="icono_usuario">Icono usuario</string>
+    <string name="logo_de_ayuda">Logo de ayuda</string>
+    <string name="signo_dolar">$</string>
+    <string name="mondedita">MONDEDITA</string>
 
 
 </resources>

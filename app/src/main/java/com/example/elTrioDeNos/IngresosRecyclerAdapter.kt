@@ -26,6 +26,7 @@ class IngresosRecyclerAdapter:
                 )
             )
         }
+
         override fun onBindViewHolder(holder: IngresosViewHolder, position: Int) {
             holder.binding(dataCards[position])
         }

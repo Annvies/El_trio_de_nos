@@ -105,7 +105,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
-                android:text="$"
+                android:text="@string/signo_dolar"
                 android:textColor="?attr/colorOnTertiary"
                 app:layout_constraintTop_toTopOf="@id/clarito"
                 app:layout_constraintBottom_toBottomOf="@id/clarito"
@@ -123,7 +123,6 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@id/dolarcito"
                 android:layout_marginLeft="5dp"
-                android:text="3402887340"
                 android:textSize="24sp"
                 android:textColor="?attr/colorOnTertiaryContainer">
             </TextView>

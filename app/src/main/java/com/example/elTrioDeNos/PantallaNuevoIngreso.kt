@@ -1,5 +1,6 @@
 package com.example.elTrioDeNos
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
@@ -16,6 +17,8 @@ import java.util.Locale
 class PantallaNuevoIngreso : AppCompatActivity() {
 
     private lateinit var binding: ActivityPantallaNuevoIngresoBinding
+
+    val contexto: Context = this
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,13 +45,13 @@ class PantallaNuevoIngreso : AppCompatActivity() {
 
         // Validación básica
         if (montoTexto.isEmpty()) {
-            Toast.makeText(this, "Por favor, ingresa un monto.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(contexto, "Por favor, ingresa un monto.", Toast.LENGTH_SHORT).show()
             return
         }
 
         val monto = montoTexto.toDoubleOrNull()
         if (monto == null || monto <= 0) {
-            Toast.makeText(this, "Monto inválido.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(contexto, "Monto inválido.", Toast.LENGTH_SHORT).show()
             return
         }
 
@@ -63,11 +66,11 @@ class PantallaNuevoIngreso : AppCompatActivity() {
         )
 
         // Guardar en SharedPreferences usando DatosManager
-        DatosManager.guardarIngreso(this, nuevoIngreso)
+        DatosManager.guardarIngreso(contexto, nuevoIngreso)
 
-        Toast.makeText(this, "Ingreso registrado correctamente.", Toast.LENGTH_SHORT).show()
+        Toast.makeText(contexto, "Ingreso registrado correctamente.", Toast.LENGTH_SHORT).show()
 
-        val intent = Intent(this, PantallaIngresos::class.java)
+        val intent = Intent(contexto, PantallaIngresos::class.java)
         intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
         startActivity(intent)
         finish()
