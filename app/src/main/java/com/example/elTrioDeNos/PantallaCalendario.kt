@@ -38,19 +38,5 @@ class PantallaCalendario : AppCompatActivity() {
         }
 
 
-
-        val today = Calendar.getInstance()
-
-
-        binding.datePicker.init(
-            today.get(Calendar.YEAR),
-            today.get(Calendar.MONTH),
-            today.get(Calendar.DAY_OF_MONTH)
-        ) {
-          view, year, month, day ->
-            //mensaje
-            val msg = "You Selected: $day/${month+1}/$year"
-            Toast.makeText(this@PantallaCalendario, msg, Toast.LENGTH_SHORT).show()
-        }
     }
-    }
+}
