@@ -38,7 +38,7 @@ class IngresosRecyclerAdapter:
             fun binding(data: Ingreso) {
                 binding.precio.text = "$ " + data.monto.toString()
                 binding.nota.text = data.nota
-                binding.fecha.text = data.fecha.toString()
+                binding.fecha.text = data.fecha
             }
         }
 

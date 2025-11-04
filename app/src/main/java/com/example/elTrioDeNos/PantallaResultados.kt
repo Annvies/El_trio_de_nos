@@ -33,7 +33,7 @@ class PantallaResultados : AppCompatActivity() {
             insets
         }
 
-        val fechaDeLaBusqueda: String= intent.getStringExtra(EXTRA_FECHA) ?: ""
+        val fechaDeLaBusqueda: String= intent.getStringExtra(EXTRA_FECHA)?: ""
         val categoria: String = intent.getStringExtra(EXTRA_CATEGORIA) ?: "general"
 
         adapter = GastosRecyclerAdapter()

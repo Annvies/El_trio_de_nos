@@ -56,7 +56,6 @@ class PantallaIngresos : AppCompatActivity() {
             val cambioNuevoIngreso: Intent = Intent(contexto, PantallaNuevoIngreso::class.java)
             startActivity(cambioNuevoIngreso)
         }
-
     }
 
     override fun onResume() {

@@ -23,6 +23,8 @@ class PantallaAgregarGasto : AppCompatActivity() {
 
     private lateinit var sharedPreferences: SharedPreferences
 
+    val contexto: Context = this
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -36,7 +38,6 @@ class PantallaAgregarGasto : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val contexto: Context = this
 
         val categoriaSeleccionada = intent.getStringExtra("categoria")
 
@@ -47,18 +48,18 @@ class PantallaAgregarGasto : AppCompatActivity() {
         }
     }
 
-    private fun guardarGasto(categoria: String?) {
+    fun guardarGasto(categoria: String?) {
         val montoTexto = binding.montoGastado.text.toString().trim()
         val nota = binding.nota.text.toString().trim()
 
         if (montoTexto.isEmpty()) {
-            Toast.makeText(this, "Por favor ingresa un monto.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(contexto, "Por favor ingresa un monto.", Toast.LENGTH_SHORT).show()
             return
         }
 
         val monto = montoTexto.toDoubleOrNull()
         if (monto == null || monto <= 0) {
-            Toast.makeText(this, "Monto inválido.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(contexto, "Monto inválido.", Toast.LENGTH_SHORT).show()
             return
         }
 
@@ -71,11 +72,11 @@ class PantallaAgregarGasto : AppCompatActivity() {
             fecha = fecha
         )
 
-        DatosManager.guardarGasto(this, nuevoGasto)
+        DatosManager.guardarGasto(contexto, nuevoGasto)
 
-        Toast.makeText(this, "Gasto registrado correctamente.", Toast.LENGTH_SHORT).show()
+        Toast.makeText(contexto, "Gasto registrado correctamente.", Toast.LENGTH_SHORT).show()
 
-        val intent = Intent(this, PantallaPrincipal::class.java)
+        val intent = Intent(contexto, PantallaPrincipal::class.java)
         intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
         startActivity(intent)
         finish()

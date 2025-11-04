@@ -35,15 +35,14 @@ class PantallaNuevoIngreso : AppCompatActivity() {
         }
 
         binding.agregarIngreso.setOnClickListener {
-            guardarIngreso()
+            guardarNuevoIngreso()
         }
     }
 
-    private fun guardarIngreso() {
+    private fun guardarNuevoIngreso() {
         val montoTexto = binding.etMonto.text.toString().trim()
         val nota = binding.etNota.text.toString().trim()
 
-        // Validación básica
         if (montoTexto.isEmpty()) {
             Toast.makeText(contexto, "Por favor, ingresa un monto.", Toast.LENGTH_SHORT).show()
             return
@@ -55,17 +54,14 @@ class PantallaNuevoIngreso : AppCompatActivity() {
             return
         }
 
-        // Crear fecha actual
         val fecha = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault()).format(Date())
 
-        // Crear objeto Ingreso
         val nuevoIngreso = Ingreso(
             monto = monto,
             nota = nota,
             fecha = fecha
         )
 
-        // Guardar en SharedPreferences usando DatosManager
         DatosManager.guardarIngreso(contexto, nuevoIngreso)
 
         Toast.makeText(contexto, "Ingreso registrado correctamente.", Toast.LENGTH_SHORT).show()

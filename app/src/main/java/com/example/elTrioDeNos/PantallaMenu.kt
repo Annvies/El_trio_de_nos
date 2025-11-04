@@ -29,8 +29,6 @@ class PantallaMenu : AppCompatActivity() {
         }
         val contexto: Context = this
 
-        val longitudPass = intent.getIntExtra("password_lenght", 0)
-
         binding.btnAyuda.setOnClickListener {
             val intentAyuda = Intent(contexto, PantallaAyudaView::class.java)
             startActivity(intentAyuda)
@@ -38,7 +36,6 @@ class PantallaMenu : AppCompatActivity() {
 
         binding.btnPerfil.setOnClickListener {
             val intentUser: Intent = Intent(contexto, PantallaUsuarios::class.java)
-            intentUser.putExtra("password_lenght", longitudPass)
             startActivity(intentUser)
         }
 

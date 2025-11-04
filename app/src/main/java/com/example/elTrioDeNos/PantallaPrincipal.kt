@@ -40,7 +40,11 @@ class PantallaPrincipal : AppCompatActivity() {
 
         val contexto: Context = this
 
-        val longitudPass = intent.getIntExtra("password_length", 0)
+        /////////////////bindeo con el recycleView////////////////////////////
+
+        binding.recyclePantallaPrincipal.layoutManager = GridLayoutManager(contexto,1)
+
+        binding.recyclePantallaPrincipal.adapter = adapter
 
         /////////////////mostrar saldinho///////////////////////////////////////
         mostrarSaldo()
@@ -54,21 +58,6 @@ class PantallaPrincipal : AppCompatActivity() {
 
         cargarGastos()
 
-        /////////////////bindeo con el recycleView////////////////////////////
-
-        val nuevaLista =mutableListOf<Gasto>()
-//        nuevaLista.add(Gasto(2.50, fecha = Date().toString(),"pilfrut"))
-//
-//        nuevaLista.add(Gasto(1.00, Date().toString(), "grosso"))
-//
-//        nuevaLista.add(Gasto(17.00, Date().toString(), "grosso"))
-
-        adapter.addDataCards(nuevaLista)
-
-        binding.recyclePantallaPrincipal.layoutManager = GridLayoutManager(contexto,1)
-
-        binding.recyclePantallaPrincipal.adapter = adapter
-
         ////////////////////////////////////////////////////////////////////////
 
         binding.anadirGastoBoton.setOnClickListener {
@@ -78,7 +67,6 @@ class PantallaPrincipal : AppCompatActivity() {
 
         binding.menuBoton.setOnClickListener {
             val cambioPantallaMenu: Intent = Intent(contexto, PantallaMenu::class.java)
-            cambioPantallaMenu.putExtra("pasword_lenght", longitudPass)
             startActivity(cambioPantallaMenu)
         }
 

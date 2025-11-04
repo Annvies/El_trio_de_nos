@@ -37,7 +37,6 @@ class PantallaLogIn : AppCompatActivity() {
 
         auth = Firebase.auth
 
-
         binding.btnCrearCuenta.setOnClickListener {
             val correo = binding.emailEdittext.text.toString()
             val pass = binding.passwordEdittext.text.toString()
@@ -78,7 +77,6 @@ class PantallaLogIn : AppCompatActivity() {
         }
     }
 
-
     fun crearCuenta(
         correo: String,
         pass: String
@@ -109,7 +107,6 @@ class PantallaLogIn : AppCompatActivity() {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful){
                     val cambioPantallaPrincipal: Intent = Intent(contexto, PantallaPrincipal::class.java)
-                    cambioPantallaPrincipal.putExtra("password_length",pass.length)
                     startActivity(cambioPantallaPrincipal)
                     finish()
                 } else {
